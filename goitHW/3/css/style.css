@@ -33,6 +33,7 @@ width: 145px
   color: white;
   text-align: center;
   padding: 10px;
+  line-height:normal;
 }
 .menu1 li a:hover{
   background-color: #444444;
@@ -56,6 +57,7 @@ width: 145px
   color: black;
   text-align: center;
   padding: 10px;
+  line-height:normal;
 }
 .menu2 li a:hover{
     text-decoration:underline;
