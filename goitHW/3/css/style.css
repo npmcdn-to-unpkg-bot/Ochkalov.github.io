@@ -1,12 +1,16 @@
 .wraper{
-  width: 980px;
+  width: 970px;
   margin: 0 auto;
   box-shadow: 0 0 10px gray;
   padding: 50px;
   background-color: white;
-
+  padding-bottom: 120px;
 }
-
+/* Logo */
+.logo-heder{
+  margin-bottom: 40px;
+}
+/* Logo */
 /*NAVIGATION */
 ul li{
   list-style-type: none;
@@ -62,7 +66,6 @@ width: 145px
   text-align: right;
   padding: 10px
 }
-
 /*NAVIGATION */
 /* Left menu */
 .left-me{
@@ -70,27 +73,33 @@ width: 145px
   min-height: 40px;
   width: 240px;
   margin-top: 40px;
+
   }
 .left-me a{
   display: block;
   font-size: 14.67px;
   color: #656363;
   text-align: left;
-  padding: 20px 25px;
-  border: 1px solid grey
+  padding: 10px 25px;
+  border: 1px solid grey;
+  border-bottom:none;
 }
 .left-me li a:hover{
   padding-left: 40px;
   color: black;
 }
+.left-me li:nth-last-child(1){
+  border-bottom: 1px solid grey;
+}
+
 /* Left menu */
 /* content */
 .content{
   float: right;
   overflow: auto;
-  margin-right: 20px;
+  margin-right: 10px;
   margin-top: 40px;
-  width: 70%;
+  width: 69%;
 }
 div .velos{
   text-align: center;
