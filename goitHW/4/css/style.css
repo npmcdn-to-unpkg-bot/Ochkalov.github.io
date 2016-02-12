@@ -1,0 +1,50 @@
+.wrapper{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 5px grey;
+}
+.Logo img{
+padding-left: 50px;
+
+}
+header .Logo p{
+color: #128aa7;
+position: absolute;
+left: 130px;
+top: 95px;
+font-size: 12px;
+font-family: Tahoma;
+
+}
+.contact{
+position: absolute;
+color: #128aa7;
+right: 50px;
+top:15px;
+
+}
+.bo{
+  font-weight: bold;
+}
+.contries li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+  }
+.contries ul{
+  position: absolute;
+  right: 20px;
+  top:140px;
+}
+.contries a{
+font-size: 10px;
+}
+.contries li a{
+display: block;
+background-position: center top;
+
+}
+.indi{
+  background-image: url(img/i_flag.png);
+}
