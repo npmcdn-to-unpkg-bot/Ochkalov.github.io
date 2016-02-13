@@ -4,9 +4,12 @@
   position: relative;
   box-shadow: 0 0 5px grey;
 }
+header{
+  height: 176px;
+}
 .Logo img{
 padding-left: 50px;
-
+padding-top: 12px;
 }
 header .Logo p{
 color: #128aa7;
@@ -22,7 +25,6 @@ position: absolute;
 color: #128aa7;
 right: 50px;
 top:15px;
-
 }
 .bo{
   font-weight: bold;
@@ -30,21 +32,84 @@ top:15px;
 .contries li {
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  width: 48px;
+  padding-top: 42px;
   }
 .contries ul{
   position: absolute;
   right: 20px;
-  top:140px;
-}
-.contries a{
-font-size: 10px;
-}
-.contries li a{
-display: block;
-background-position: center top;
+  top:110px;
 
 }
-.indi{
-  background-image: url(img/i_flag.png);
+.contries li a{
+  font-size: 10px;
+  -display: block;
+
+
+}
+/*.contries li a{
+background-position: center top;
+background-repeat: no-repeat;
+}*/
+.contries .indi a{
+-display: block;
+-width: 50px;
+-height: 50px;
+-background-image: url(img/i_flag.png);
+}
+/*.indi{
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 42px;
+  padding-top: 42px;
+  /*position: relative;
+  left: 0;
+  top: -10px;
+  }*/
+/*.contries .nepal{
+  background-image: url(img/n_flag.png);
+}*/
+.menu{
+  background-color: #333333;
+  height: 30px;
+  border-bottom: 2px solid black;
+  }
+.menu li{
+  display: inline-block;
+  margin-left: 60px;
+  color: white;
+  line-height: normal;
+  padding-top: 5px;
+  position: relative;
+  -z-index: 1;
+}
+.menu li ul{
+  display: none;
+  background:#333333;
+  position: absolute;
+  left: 0;
+  top: 32px;
+  width: 150px;
+  text-align: left;
+  }
+.menu li ul li{
+display: inline-block;
+text-align: left;
+margin: 5px 10px;
+
+}
+.menu li:hover ul{
+  display: block;
+}
+.trio{
+  position: absolute;
+  right: -16px;
+  top:12px;
+  border: 5px solid transparent;
+  border-top: 5px solid white;
+  width: 0;
 }
