@@ -1,11 +1,19 @@
 .wrapper{
   width: 1000px;
   margin: 0 auto;
+  -padding: 10px;
   position: relative;
   box-shadow: 0 0 5px grey;
-}
+  border-bottom: 5px solid black;
+  }
+  body{
+    background-color: #0f87aa;
+    background-image: url(../img/backgraund.png);
+    background-repeat: repeat-x;
+  }
 header{
   height: 176px;
+  background-color: white;
 }
 .Logo img{
 padding-left: 50px;
@@ -15,7 +23,7 @@ header .Logo p{
 color: #128aa7;
 position: absolute;
 left: 130px;
-top: 95px;
+top: 105px;
 font-size: 12px;
 font-family: Tahoma;
 
@@ -24,10 +32,13 @@ font-family: Tahoma;
 position: absolute;
 color: #128aa7;
 right: 50px;
-top:15px;
+top:5px;
+font-size: 12px;
+line-height: normal;
 }
 .bo{
   font-weight: bold;
+  margin-bottom: 5px;
 }
 .contries li {
   list-style: none;
@@ -48,8 +59,6 @@ top:15px;
 .contries li a{
   font-size: 10px;
   -display: block;
-
-
 }
 /*.contries li a{
 background-position: center top;
@@ -77,6 +86,7 @@ background-repeat: no-repeat;
   background-color: #333333;
   height: 30px;
   border-bottom: 2px solid black;
+  margin-top: -3px;
   }
 .menu li{
   display: inline-block;
@@ -112,4 +122,57 @@ margin: 5px 10px;
   border: 5px solid transparent;
   border-top: 5px solid white;
   width: 0;
+}
+.colonki{
+  width: 1000px;
+  background-image: url(../img/colon.png);
+  background-repeat: repeat-y;
+  float: left;
+  box-shadow: 0 0 5px grey;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+.leftC{
+  width: 200px;
+  float: left;
+
+}
+.centerC{
+  width: 600px;
+  float: left;
+}
+.rightC{
+  width: 200px;
+  float: left;
+}
+.rightC h2,
+.leftC h2{
+margin-top: 5px;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+-border: 1px solid black;
+}
+.colonki:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.rightC p,
+.leftC p{
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px;
+  line-height: 1.5em;
+  font-family: Tahoma;
+}
+.copy{
+  width: 999px;
+  margin: 15px auto;
+  text-align: center;
+  color: white;
+
+
 }
