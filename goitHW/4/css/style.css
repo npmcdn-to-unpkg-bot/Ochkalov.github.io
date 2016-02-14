@@ -54,12 +54,10 @@ line-height: normal;
   position: absolute;
   right: 20px;
   top:110px;
-
 }
 .contries li a{
   font-size: 10px;
   color: #128aa7;
-  -display: block;
 }
 /*.contries li a{
 background-position: center top;
@@ -88,7 +86,9 @@ background-repeat: no-repeat;
   height: 30px;
   border-bottom: 2px solid black;
   margin-top: -3px;
-  }
+  position: relative;
+  z-index:999;
+}
 .menu li{
   display: inline-block;
   margin-left: 60px;
@@ -96,26 +96,25 @@ background-repeat: no-repeat;
   line-height: normal;
   padding-top: 5px;
   position: relative;
-  -z-index: 1;
 }
 .menu li ul{
   display: none;
   background:#333333;
   position: absolute;
   left: 0;
-  top: 32px;
+  top: 21px;
   width: 150px;
   text-align: left;
+  z-index:2;
   }
 .menu li ul li{
 display: inline-block;
 text-align: left;
 margin: 5px 10px;
-
 }
 .menu li:hover ul{
   display: block;
-}
+  }
 .trio{
   position: absolute;
   right: -16px;
