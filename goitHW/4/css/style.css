@@ -123,6 +123,7 @@ margin: 2px 10px;
 
 .menu li:hover ul{
   display: block;
+  cursor: pointer;
 }
 .trio{
 /*  position: absolute;
