@@ -149,7 +149,10 @@ input::-moz-placeholder{
 .check input{
   float: left;
   display: block;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
+  margin-top: 1px;
+  width: 15px;
+  height: 15px;
 
 }
 .check p{
