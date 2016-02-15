@@ -8,22 +8,24 @@
 .menu{
   height: 36px;
   background-color: #075190;
+  margin-bottom: 215px;
 }
 .menu ul{
   float: right;
   height: 36px;
-}
+  }
 .menu li{
   list-style: none;
   display: inline-block;
   color: #60b5ed;
-  margin-right: 20px;
+  margin-right: 15px;
   line-height: normal;
   padding-top: 10px;
   font-size: 14px;
   height: 26px;
-  
-}
+  padding-left: 10px;
+  padding-right: 10px;
+  }
 #flag{
 /*  height: 31px;
   width: 28px;*/
@@ -41,10 +43,28 @@
 
 }
 
-.menu #flag{
+.menu li:hover{
+  background: #4eabda;
+  color: white;
 }
-
+li .bo{
+  text-decoration: underline;
+}
+#select{
+  background: #4eabda;
+  color: white;
+}
+/*Pop-UP*/
+.popup{
+  width: 560px;
+  height: 612px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+/*Pop-UP*/
 
 body{
   background: black;
+  font-family: Tahoma;
 }
