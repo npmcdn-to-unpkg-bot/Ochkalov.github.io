@@ -87,12 +87,13 @@ background-repeat: no-repeat;
   border-bottom: 2px solid black;
   margin-top: -3px;
   position: relative;
-  z-index:1;
+  z-index:50;
 }
 .menu li{
   display: inline-block;
   margin-left: 60px;
   color: white;
+  height: 30px;
   line-height: normal;
   padding-top: 5px;
   position: relative;
@@ -105,16 +106,23 @@ background-repeat: no-repeat;
   top: 21px;
   width: 150px;
   text-align: left;
-  z-index:222;
+  z-index:4;
+  border-top:2px solid black;
+  margin-top: 9px;
   }
 .menu li ul li{
 display: inline-block;
 text-align: left;
-margin: 5px 10px;
+height: 15px;
+margin: 2px 10px;
 }
+.menu li ul li:last-child{
+  margin-bottom: 15px;
+}
+
 .menu li:hover ul{
   display: block;
-  }
+}
 .trio{
   position: absolute;
   right: -16px;
