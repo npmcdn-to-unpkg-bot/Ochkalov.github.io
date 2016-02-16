@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'helveticaneuecyrlight';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .wrapper{
   width: 1215px;
   height: 1064px;
@@ -125,6 +136,8 @@ li .bo{
   margin: 15px auto;
   background-color: black;
   border: none;
+  color: #cccccc;
+  padding-left: 5px;
 }
 .inputte  input:focus{
   background-color: #1b5288;
@@ -209,6 +222,6 @@ input::-moz-placeholder{
 
 body{
   background: black;
-  font-family: Tahoma;
+  font-family: "helveticaneuecyrlight", Tahoma;
   font-size: 14px;
 }
