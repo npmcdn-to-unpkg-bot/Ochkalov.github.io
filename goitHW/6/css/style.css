@@ -1,7 +1,7 @@
 .wrapper{
-  width: 1000px;
+  width: 908px;
   margin: 16px auto;
-  box-shadow: 0 0 5px grey;
+  -box-shadow: 0 0 5px grey;
 }
 body{
   font-family: Arial, sans-serif;
@@ -15,30 +15,119 @@ header .tel img{
   vertical-align: middle;
 }
 header .avtoriz{
+  display: inline-block;
   background-color: #114266;
   box-sizing: border-box;
   width: 495px;
   height: 28px;
-  box-shadow: 0 0 2px blue;
-  display: inline-block;
+  box-shadow: 0 2px 2px #b4b4b4;
+  border-radius: 5px;
   vertical-align: middle;
+  margin-left: 17px;
 }
 header .pic{
   float: left;
-  clear: both;
   margin: 5px;
+}
+header .pic:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 header .login{
-  margin: 5px;
+  margin: 4px 0;
   padding: 0;
+  float: left;
 }
-header .in-login{
+
+.login:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+header .in-login,
+.in-pas{
   height: 16px;
   padding: 0;
-  font-style: none;
+  font-size: 11px;
+  box-shadow: 0 2px #114266;
+  width: 112px;
+  border-style: hidden;
+  padding-left: 5px;
+}
+header .in-pas{
+margin-left: 4px;
+}
+.avtoriz ul li{
+  display: inline-block;
+}
+.avtoriz ul li a{
+  font-size: 11px;
+  text-decoration: none;
+  color: white;
 
 }
-
-
-
+.avtoriz ul li:last-child{
+  text-decoration: underline;
+  float: right;
+  margin-right: 8px;
+  font-size: 12px;
+  line-height: normal;
+}
+.avtoriz .liev-pas a{
+  color: #bfbfbf;
+}
+.avtoriz ul li:first-child{
+  margin-left: 4px;
+}
+.avtoriz ul li:first-child:after{
+  content: " | ";
+  color: white;
+}
+.avtoriz .text-login{
+  padding: 4px;
+  font-family: "Lucida Sans Unicode", sans-serif;
+}
+.cart-site{
+  border: 1px solid #bdc4c7;
+  height: 20px;
+  width: 77px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 2px 2px 5px #bcc3c6;
+  margin-left: 17px;
+}
+.cart-site img{
+  padding-left: 3px;
+}
+.logo{
+  margin-top: 10px;
+}
 /*HEADER*/
+/*Navigation*/
+nav ul li{
+  display: inline-block;
+}
+.navigation{
+width: 908px;
+height: 33px;
+background: black;
+background: linear-gradient(to top, black, black, black, #505860, #3c4367);
+box-shadow: 0 0 5px #3c4367;
+border-radius: 5px;
+}
+.navigation li a{
+  color: #bbc5c8;
+  line-height: normal;
+}
+.navigation li{
+  
+
+
+}
+/*Navigation*/
