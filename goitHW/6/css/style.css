@@ -111,8 +111,21 @@ margin-left: 4px;
 /*HEADER*/
 /*Navigation*/
 nav ul li{
-  display: inline-block;
+  -display: inline-block;
+  float: left;
 }
+nav ul{
+  width: 480px;
+}
+
+/*nav ul:after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+*/
 .navigation{
 width: 908px;
 height: 33px;
@@ -124,10 +137,72 @@ border-radius: 5px;
 .navigation li a{
   color: #bbc5c8;
   line-height: normal;
+  font-size: 14px;
+  text-decoration: none;
 }
 .navigation li{
-  
+  margin: 6px 15px;
+  box-sizing: border-box;
+  position: relative;
+  left: 127px;
+  -border: 1px solid white;
 
 
 }
+.basket{
+  -float: left;
+}
+.basket .img-basket{
+  background-image: url(../img/basket.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 25px;
+
+}
+.basket p{
+  display: inline-block;
+  font-size: 11px;
+  color: #8a9296;
+  margin-top: 8px;
+  position: relative;
+  left: 200px;
+  padding-left: 10px;
+}
+.basket .colo{
+  font-size: 12px;
+  color: #0d5a8f;
+}
 /*Navigation*/
+/*FILTER*/
+.filter{
+  height: 133px;
+  width: 908px;
+  border: 1px solid black;
+  margin-top: 12px;
+  font-size: 0;
+  display: inline-block;
+}
+.avto{
+  font-size: 10px;
+  height: 133px;
+  width: 415px;
+  border: 1px solid black;
+  display: inline-block;
+}
+.shin{
+  font-size: 12px;
+  height: 133px;
+  width: 190px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 15px;
+}
+.disk{
+  font-size: 10px;
+  height: 133px;
+  width: 265px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-left: 10px;
+}
+/*FILTER*/
