@@ -49,6 +49,7 @@
   padding-left: 30px;
   background-position: left top;
   color: white;
+  cursor:pointer;
 
 }
 #line{
@@ -71,6 +72,7 @@ li .bo{
 #select{
   background: #4eabda;
   color: white;
+  cursor:pointer;
 }
 /*Pop-UP*/
 .popup{
@@ -103,6 +105,7 @@ li .bo{
   border-radius: 4px;
   display: block;
   outline: none;
+  cursor:pointer;
   }
 
   .ou{
@@ -212,6 +215,7 @@ input::-moz-placeholder{
   border-radius: 4px;
   border: none;
   outline: none;
+  cursor:pointer;
 }
 .footer{
   width: 310px;
