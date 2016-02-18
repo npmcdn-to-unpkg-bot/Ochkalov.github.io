@@ -25,6 +25,10 @@
   float: right;
   height: 36px;
   }
+.menu ol{
+    float: right;
+    height: 36px;
+    }
 .menu li{
   list-style: none;
   display: inline-block;
@@ -44,6 +48,7 @@
   background-repeat: no-repeat;
   padding-left: 30px;
   background-position: left top;
+  color: white;
 
 }
 #line{
@@ -54,10 +59,11 @@
 
 }
 
-.menu li:hover{
+.menu ul li:hover{
   background: #4eabda;
   color: white;
   font-weight: bold;
+  cursor:pointer;
 }
 li .bo{
   text-decoration: underline;
@@ -96,6 +102,7 @@ li .bo{
   border: none;
   border-radius: 4px;
   display: block;
+  outline: none;
   }
 
   .ou{
@@ -127,8 +134,6 @@ li .bo{
     vertical-align: middle;
   }
 
-
-
 .inputte  input{
   display: block;
   width: 275px;
@@ -138,6 +143,7 @@ li .bo{
   border: none;
   color: #cccccc;
   padding-left: 5px;
+  outline: none;
 }
 .inputte  input:focus{
   background-color: #1b5288;
@@ -158,6 +164,7 @@ input::-moz-placeholder{
   width: 290px;
   margin: 15px auto;
   text-align: center;
+  outline: none;
 }
 .check input{
   float: left;
@@ -166,6 +173,7 @@ input::-moz-placeholder{
   margin-top: 1px;
   width: 15px;
   height: 15px;
+  outline: none;
 
 }
 .check p{
@@ -203,6 +211,7 @@ input::-moz-placeholder{
   display: block;
   border-radius: 4px;
   border: none;
+  outline: none;
 }
 .footer{
   width: 310px;
@@ -210,12 +219,10 @@ input::-moz-placeholder{
   margin-top: 20px;
 }
 .footer p{
-
   color: #cccccc;
   text-align: center;
   font-size: 11px;
   line-height: 16px;
-
 }
 
 /*Pop-UP*/
