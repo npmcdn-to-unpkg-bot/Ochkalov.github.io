@@ -7,11 +7,20 @@
     body{
       font-size: 0;
     }
+    .clear{
+      width: 700px;
+      margin: 50px auto;
+      /*-box-sizing: padding-box;
+      border: -5px solid green;
+      -border-style: inset;
+      z-index: 333;
+      */
+    }
     table{
       border-collapse: collapse;
     }
       td, tr{
-        border: 2px solid black;
+        border: 5px solid black;
         -border-collapse: collapse;
         text-align: center;
         margin: 0;
@@ -32,53 +41,73 @@
       .blu{
         background-color: blue;
       }
+      .left{
+        border-left: 0;
+      }
+      .right{
+        border-right: 0;
+      }
+      .ugol-left-up{
+        border-left: 0;
+        border-top: 0;
+      }
+      .ugol-right-up{
+        border-right: 0;
+        border-top: 0;
+      }
+      .ugol-left-bottom{
+        border-left: 0;
+        border-bottom: 0;
+      }
+      .ugol-right-bottom{
+        border-bottom: 0;
+        border-right: 0;
+      }
     </style>
   </head>
   <body>
+    <div class="clear">
     <table>
-      <tr>
-        <td colspan="2">Ячейка 1</td>
-        <td colspan="3">Ячейка 3</td>
-        <td class="yel" colspan="2">Ячейка 6</td>
+      <tr class="ugol-left-up ugol-right-up">
+        <td class="ugol-left-up" colspan="2">Ячейка 1</td>
+        <td class="ugol-right-up" colspan="3">Ячейка 3</td>
+        <td class="yel ugol-right-up" colspan="2">Ячейка 6</td>
       </tr>
-      <tr>
-        <td rowspan="2">Ячейка 1</td>
+      <tr class="left right">
+        <td class="left" rowspan="2">Ячейка 1</td>
         <td colspan="4" rowspan="4" class="red">Ячейка 2</td>
-        <td class="yel" colspan="3" rowspan="2">Ячейка 6</td>
+        <td class="yel right" colspan="3" rowspan="2">Ячейка 6</td>
       </tr>
-      <tr>
-
-        </tr>
-      <tr>
-        <td rowspan="3">Ячейка 1</td>
+      <tr class="left right">
+      </tr>
+      <tr class="left right" >
+        <td class="left" rowspan="3">Ячейка 1</td>
         <td rowspan="2">Ячейка 6</td>
-        <td rowspan="2">Ячейка 7</td>
+        <td class="right" rowspan="2">Ячейка 7</td>
       </tr>
-      <tr>
+      <tr class="left right">
 
       </tr>
-      <tr>
+      <tr class="left right">
         <td rowspan="2" class="blac">Ячейка 2</td>
         <td rowspan="2" class="blac">Ячейка 3</td>
         <td colspan="2">Ячейка 4</td>
-        <td colspan="2">Ячейка 6</td>
+        <td class="right" colspan="2">Ячейка 6</td>
       </tr>
-      <tr>
-        <td rowspan="3" class="yel">Ячейка 1</td>
+      <tr class="right ugol-left-bottom">
+        <td rowspan="3" class="yel ugol-left-bottom">Ячейка 1</td>
         <td colspan="2">Ячейка 4</td>
-        <td rowspan="2" class="blu" colspan="2">Ячейка 6</td>
+        <td rowspan="2" class="blu right" colspan="2">Ячейка 6</td>
 
       </tr>
-      <tr>
-        <td colspan="2" rowspan="2">Ячейка 2</td>
+      <tr class="right ugol-left-bottom">
+        <td class="ugol-left-bottom" colspan="2" rowspan="2">Ячейка 2</td>
         <td colspan="2" class="blac">Ячейка 4</td>
-
       </tr>
-      <tr>
-
-        <td colspan="4">Ячейка 4</td>
+      <tr class="ugol-left-bottom ugol-right-bottom">
+        <td class="ugol-right-bottom" colspan="4">Ячейка 4</td>
       </tr>
     </table>
-
+</div>
   </body>
 </html>
