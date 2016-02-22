@@ -187,7 +187,7 @@ border-radius: 5px;
 .filter{
   height: 133px;
   width: 908px;
-  border: 1px solid black;
+  -border: 1px solid black;
   margin-top: 12px;
   font-size: 0;
   display: inline-block;
@@ -197,31 +197,115 @@ border-radius: 5px;
   height: 133px;
   width: 415px;
   -border: 1px solid black;
-  box-shadow: 3px 0 5px #969696;
-  border-radius: 5px;
+  box-shadow: 1px 0 5px #969696;
+  border-radius: 10px;
   display: inline-block;
-
+  float: left;
+}
+.avto:after{
+  content: "";
+  display: block;
+  clear: both;
 }
 .shin{
   font-size: 12px;
   height: 133px;
   width: 190px;
   -border: 1px solid black;
-  box-shadow: 3px 0 5px #969696;
+  box-shadow: 1px 0 5px #969696;
+  border-radius: 10px;
   display: inline-block;
   margin-left: 15px;
+  float: left;
+}
+.shin:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.filter:after{
+  content: "";
+  display: block;
+  clear: both;
 }
 .disk{
   font-size: 10px;
   height: 133px;
   width: 265px;
-  border: 1px solid black;
+  -border: 1px solid black;
+  box-shadow: 1px 0 5px #969696;
   display: inline-block;
   margin-left: 10px;
+  position: relative;
+  float: right;
+  border-radius: 10px;
 }
-.avto .avto-header{
-  text-align: center;
+.disk:after{
+  content: "";
+  display: block;
+  clear: both;
 }
+
+.forma-disk .text-ser{
+line-height: 1em;
+}
+.forma-disk .pole-disk{
+  width: 56px;
+}
+.disk-colon2{
+  -border: 1px solid black;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
+.disk-colon2 p{
+  padding-bottom: 5px;
+}
+.disk-colon2 .pole-disk {
+  margin-top: 5px;
+}
+
+.disk-colon2:before{
+  content: "";
+  background-image: url(../img/vertic-line.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  left: -10px;
+  width: 3px;
+  height: 106px;
+  padding-left: 5px;
+  -border: 1px solid black;
+}
+.forma-disk-colon1{
+  position: relative;
+}
+.forma-disk-colon1-p .pole-disk{
+  position: absolute;
+  left: 90px;
+  top: -5px;
+}
+.last-p{
+  position: absolute;
+  left: 90px;
+  bottom: 8px;
+  width: 56px;
+}
+
+
+.pole-disk-mini{
+  position: absolute;
+  left: 90px;
+  top: 28px;
+}
+.forma-disk-colon1-p{
+  margin: 3px 15px;
+}
+.otstup{
+  margin-top: 5px;
+}
+
 .diski{
   color: #154468;
   float: left;
@@ -230,6 +314,9 @@ border-radius: 5px;
   text-align: left;
   padding: 10px 20px;
   padding-bottom: 5px;
+}
+.avto .avto-header{
+  text-align: center;
 }
 .avto-header:after{
   content: "";
@@ -267,6 +354,10 @@ border-radius: 5px;
   margin: 5px 10px;
   font-weight: bold;
 }
+.header-disk{
+  margin-bottom: 10px;
+}
+
 .forma-shin p{
   font-size: 10px;
   margin-left: 15px;
@@ -282,6 +373,7 @@ border-radius: 5px;
 .pole-R{
   width: 40px;
   font-size: 11px;
+  margin-bottom: 3px;
 }
 .R{
   padding-left: 29px;
@@ -290,15 +382,37 @@ border-radius: 5px;
   font-size: 11px;
 }
 .checkb{
-  font-size: 14px;
+  font-size: 12px;
   position: relative;
   left: 40px;
   top: -18px;
 }
-.more{
+.checkb input{
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 0;
+}
+.checkb-input{
+  height: 10px;
+  line-height: 0;
+}
+}
+.disk-colon2 .more{
+  display: inline-block;
   text-align:  right;
-  margin-right: 10px;
-  margin-top: -2px;
+
+  -margin-right: 10px;
+  -margin-top: -2px;
+}
+.more-shin{
+  position: relative;
+  right: -115px;
+  bottom: 25px;
+}
+.more-avto{
+  position: relative;
+  left: 340px;
+
 }
 .more-sub{
   color: #154467;
@@ -317,7 +431,7 @@ font-size: 10px;
 color: black;
 font-weight: bold;
 position: relative;
-margin-bottom: 10px;
+margin-bottom: 7px;
 line-height: 8px;
 }
 .mark-avto{
@@ -349,3 +463,124 @@ width: 185px;
   -border: 1px solid black;
 }
 /*FILTER*/
+
+/*Container*/
+.container{
+  margin-top: 15px;
+  width: 908px;
+
+}
+.left-colon{
+  display:  inline-block;
+  margin-right: 10px;
+  float: left;
+}
+.header-left{
+/*  -height: 25px;
+  -width: 180px; */
+  padding:7px 2px 7px 30px;
+  border: 1px solid #949fa4;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #114165;
+  font-family: "Lucida Sans Unicode";
+  vertical-align: middle;
+
+}
+.header-left::before{
+  content: "";
+  display:  inline-block;
+  background-image: url(../img/icon-katalog.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 20px;
+  height: 21px;
+  margin-left: -25px;
+  margin-top: -5px;
+  position: absolute;
+
+}
+.title-left{
+  font-size: 14px;
+  color: #114165;
+  font-family: "Lucida Sans Unicode";
+  padding:7px 2px 7px 30px;
+  border: 1px solid #949fa4;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+.title-left::before{
+  content: "";
+  display:  inline-block;
+  background-image: url(../img/icon-disk.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 23px;
+  height: 23px;
+  margin-left: -25px;
+  margin-top: -5px;
+  position: absolute;
+}
+.spisok{
+  list-style-type: circle;
+  margin-left: 10px;
+}
+.container .center-colon{
+  display:  inline-block;
+  width: 525px;
+  background-color: #dde1e3;
+
+}
+.right-colon{
+  display:  inline-block;
+  margin-left: 10px;
+}
+.header-right,
+.title-right
+{
+  font-size: 14px;
+  color: #114165;
+  font-family: "Arial";
+}
+.header-right{
+  padding:7px 85px 7px 30px;
+  border: 1px solid #949fa4;
+  border-radius: 15px;
+  font-size: 13px;
+  color: #114165;
+  font-family: "Lucida Sans Unicode";
+  vertical-align: middle;
+}
+.header-right::before{
+  content: "";
+  display:  inline-block;
+  background-image: url(../img/icon-katalog.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 20px;
+  height: 21px;
+  margin-left: -25px;
+  margin-top: -5px;
+  position: absolute;
+
+}
+.title-right{
+padding:7px 2px 7px 30px;
+border: 1px solid #949fa4;
+border-radius: 15px;
+margin-top: 15px;
+}
+
+.title-right::before{
+  content: "";
+  display:  inline-block;
+  background-image: url(../img/icon-disk.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 23px;
+  height: 23px;
+  margin-left: -25px;
+  margin-top: -5px;
+  position: absolute;
+}
+/*Container*/

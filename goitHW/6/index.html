@@ -92,7 +92,7 @@
       <select class="mark-avto" name=""></select></p>
       <p class="colon2">Комплектация:
       <select class="mark-avto" name=""></select></p>
-      <div class="more"><input type="submit" class="more-sub" name="name" value="поиск...">
+      <div class="more more-avto"><input type="submit" class="more-sub" name="name" value="поиск...">
       </div>
       </form>
   </div>
@@ -103,7 +103,7 @@
       <form action="">
         <p>Размер:
         <select class="pole-shin" name="">
-          <option class="opti" value="142">142</option>
+          <option class="opti" value="145">145</option>
         </select>  <span class="forma-shin-text-up">/</span>
         <select class="pole-shin" name=""></select>
         </p>
@@ -111,37 +111,82 @@
           <option class="opti" value="12">12</option>
         </select></p>
           <p>Сезон:</p>
-          <p class="checkb">
-          <label> <input type="checkbox" name="name" value="">лето<br></label>
-          <label><input type="checkbox" name="name" value="">зима<br></label>
-          <label><input type="checkbox" name="name" value="">всесез<br></label>
-        </p>
-        <div class="more"><input type="submit" class="more-sub" name="name" value="поиск...">
+          <div class="checkb">
+          <p><label> <input type="checkbox" class="checkb-input" name="name" value="">лето</label></p>
+          <p><label><input type="checkbox" class="checkb-input" name="name" value="">зима</label></p>
+          <p><label><input type="checkbox" class="checkb-input" name="name" value="">всесез</label></p>
+        </div>
+        <div class="more more-shin"><input type="submit" class="more-sub" name="name" value="поиск...">
         </div>
       </form>
-
     </div>
-
   </div>
   <div class="disk">
     <p class="header-disk">поиск дисков</p>
     <div class="forma-disk">
       <form class="" action="index.html" method="post">
-    <p class="">Диаметр <span class="text-ser">диска:</span>
-    <select class="" name=""></select></p>
+    <div class="forma-disk-colon1">
+    <p class="forma-disk-colon1-p">Диаметр <span class="text-ser">диска:</span>
+    <select class="pole-disk" name="">
+      <option class="opti" value="14">14</option>
+    </select></p>
 
-    <p class="">Количество    <span class="text-ser">крепёжных <br>отверстий:</span>
-    <select class="" name=""></select></p>
+    <p class="forma-disk-colon1-p otstup">Количество <br><span class="text-ser">крепёжных <br>отверстий:</span>
+    <select class="pole-disk-mini" name="">
+      <option class="opti" value="3">3</option>
+    </select></p>
 
-    <p class="">Диаметр <span class="text-ser">расположения<br> крепёжных<br>  отверстий:</span>
-    <select class="" name=""></select></p>
-
+    <p class="forma-disk-colon1-p">Диаметр <br><span class="text-ser">расположения<br>крепёжных<br>отверстий:</span>
+    <select class="last-p" name="">
+      <option class="opti" value="12">12</option>
+    </select></p>
+  </div>
+    <div class="disk-colon2">
+      <!--<img src="img/vertic-line.png" alt="vertic-line">  -->
+      <p class="">ДЦО<br><span class="text-ser">(диаметр<br>центрального<br>отверстия): <br></span>
+      <select class="pole-disk" name="">
+        <option class="opti" value="12">12</option>
+      </select></p>
+      <p class="">ЕТ <br><span class="text-ser">(вылет диска):<br></span>
+      <select class="pole-disk" name="">
+        <option class="opti" value="14">14</option>
+      </select></p>
+      <div class="more"><input type="submit" class="more-sub" name="name" value="поиск...">
+      </div>
+    </div>
     </form>
     </div>
   </div>
   </div>
-
 </section>
+<main>
+  <div class="container">
+    <div class="left-colon">
+      <div class="header-left">КАТАЛОГ ПРОДУКЦИИ:</div>
+        <div class="title-left">ШИНЫ</div>
+          <ul class="spisok">
+            <ol>Наименование 1</ol>
+            <ol>Наименование 2</ol>
+            <ol>Наименование 3</ol>
+            <ol>Наименование 4</ol>
+          </ul>
+        <div class="title-left">ДИСКИ</div>
+        <div class="title-left">БОЛТЫ</div>
+    </div>
+      <div class="center-colon">
+        <div class="tovar">
+          Goodyear
+        </div>
+          <h3>Ultra Grip Extreme</h3>
+      </div>
+    <div class="right-colon">
+      <div class="header-right">БРЕНДЫ:</div>
+        <div class="title-right">ШИНЫ</div>
+        <div class="title-right">ДИСКИ</div>
+    </div>
+  </div>
+
+</main>
 
 </div>
   </body>
