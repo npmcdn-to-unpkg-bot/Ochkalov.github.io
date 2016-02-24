@@ -10,20 +10,28 @@ body{
 header .tel{
   font-size: 18px;
   display: inline-block;
+  padding-left: 5px;
+  padding-top: 6px;
 }
 header .tel img{
   vertical-align: middle;
+}
+.tel p{
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: #5e696d;
 }
 header .avtoriz{
   display: inline-block;
   background-color: #114266;
   box-sizing: border-box;
   width: 495px;
-  height: 28px;
+  height: 26px;
   box-shadow: 0 2px 2px #b4b4b4;
   border-radius: 5px;
   vertical-align: middle;
-  margin-left: 17px;
+  margin-left: 15px;/*17*/
+  margin-bottom: 3px;
 }
 header .pic{
   float: left;
@@ -55,12 +63,12 @@ header .in-login,
   padding: 0;
   font-size: 11px;
   box-shadow: 0 2px #114266;
-  width: 112px;
+  width: 110px;
   border-style: hidden;
   padding-left: 5px;
 }
 header .in-pas{
-margin-left: 4px;
+margin-left: 2px;
 }
 .avtoriz ul li{
   display: inline-block;
@@ -80,13 +88,15 @@ margin-left: 4px;
 }
 .avtoriz .liev-pas a{
   color: #bfbfbf;
+  font-size: 12px;
 }
 .avtoriz ul li:first-child{
   margin-left: 4px;
 }
 .avtoriz ul li:first-child:after{
-  content: " | ";
+  content: " |";
   color: white;
+  font-size: 11px;
 }
 .avtoriz .text-login{
   padding: 4px;
@@ -100,13 +110,14 @@ margin-left: 4px;
   display: inline-block;
   text-align: center;
   box-shadow: 2px 2px 5px #bcc3c6;
-  margin-left: 17px;
+  margin-left: 10px;  /*17*/
+  vertical-align: 5px;
 }
 .cart-site img{
-  padding-left: 3px;
+  padding-left: 4px;
 }
 .logo{
-  margin-top: 10px;
+  margin-top: 8px;
 }
 /*HEADER*/
 /*Navigation*/
@@ -127,8 +138,9 @@ nav ul{
 }
 */
 .navigation{
-width: 908px;
+width: 909px;
 height: 33px;
+margin-top: 2px;
 background: black;
 background: linear-gradient(to top, black, black, black, #505860, #3c4367);
 box-shadow: 0 0 5px #3c4367;
@@ -139,14 +151,17 @@ border-radius: 5px;
   line-height: normal;
   font-size: 14px;
   text-decoration: none;
+  font-family: "Lucida Sans Unicode";
 }
 .navigation li{
-  margin-top: 5px;
+  margin-top: 4px;
   padding: 3px 15px;
   box-sizing: border-box;
   position: relative;
-  left: 127px;
-
+  left: 130px;
+}
+.navigation ul{
+  width: 510px;
 }
 .navigation li:hover{
   margin-top: 5px;
@@ -167,25 +182,31 @@ border-radius: 5px;
   background-repeat: no-repeat;
   background-position: left;
   padding-left: 25px;
+  height: 17px;
 
 }
 .basket p{
   display: inline-block;
   font-size: 11px;
   color: #8a9296;
-  margin-top: 8px;
+  margin-top: 9px;
   position: relative;
-  left: 200px;
+  left: 180px;
   padding-left: 10px;
+  font-family: Arial;
+  letter-spacing: 0.4px;
+
 }
 .basket .colo{
   font-size: 12px;
   color: #0d5a8f;
+  letter-spacing: 0.5px;
+
 }
 /*Navigation*/
 /*FILTER*/
 .filter{
-  height: 133px;
+  height: 135px;
   width: 908px;
   -border: 1px solid black;
   margin-top: 12px;
@@ -194,11 +215,12 @@ border-radius: 5px;
 }
 .avto{
   font-size: 10px;
-  height: 133px;
+  height: 134px;
   width: 415px;
-  -border: 1px solid black;
+  margin-left: 5px;
+    -border: 1px solid black;
   box-shadow: 1px 0 5px #969696;
-  border-radius: 10px;
+  border-radius: 20px;
   display: inline-block;
   float: left;
 }
@@ -235,7 +257,7 @@ border-radius: 5px;
   -border: 1px solid black;
   box-shadow: 1px 0 5px #969696;
   display: inline-block;
-  margin-left: 10px;
+  margin-right: 5px;
   position: relative;
   float: right;
   border-radius: 10px;
@@ -249,20 +271,22 @@ border-radius: 5px;
 .forma-disk .text-ser{
 line-height: 1em;
 }
-.forma-disk .pole-disk{
+.pole-disk{
   width: 56px;
+  -margin-left: 10px;
 }
 .disk-colon2{
   -border: 1px solid black;
   position: absolute;
-  right: 30px;
+  right: 20px;
   top: 5px;
 }
 .disk-colon2 p{
-  padding-bottom: 5px;
+  padding-bottom: 2px;
+  font-family: "Lucida Sans Unicode";
 }
 .disk-colon2 .pole-disk {
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 .disk-colon2:before{
@@ -283,24 +307,25 @@ line-height: 1em;
 }
 .forma-disk-colon1-p .pole-disk{
   position: absolute;
-  left: 90px;
+  left: 105px;
   top: -5px;
 }
 .last-p{
   position: absolute;
-  left: 90px;
+  left: 105px;
   bottom: 8px;
   width: 56px;
 }
-
-
 .pole-disk-mini{
   position: absolute;
-  left: 90px;
+  left: 105px;
   top: 28px;
+  width: 48px;
 }
 .forma-disk-colon1-p{
   margin: 3px 15px;
+  font-family: "Lucida Sans Unicode";
+
 }
 .otstup{
   margin-top: 5px;
@@ -310,10 +335,12 @@ line-height: 1em;
   color: #154468;
   float: left;
   font-size: 10px;
-  font-weight: bold;
+  letter-spacing: 0.6px;
+  font-weight:  900;
   text-align: left;
-  padding: 10px 20px;
+  padding: 7px 20px;
   padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 .avto .avto-header{
   text-align: center;
@@ -326,19 +353,21 @@ line-height: 1em;
 .search-avto{
   color: #154468;
   display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 900;
   padding-top: 4px;
 }
 .chini{
   float: right;
   color: #154468;
   font-size: 10px;
-  font-weight: bold;
+  font-weight: 900;
   display: inline-block;
   text-align: right;
-  padding: 10px 20px;
+  padding: 3px 20px;
   padding-bottom: 5px;
+  letter-spacing: 0.6px;
 }
 .chini::after{
   content: "";
@@ -351,29 +380,30 @@ line-height: 1em;
   text-align: left;
   font-size: 12px;
   color: #114165;
-  margin: 5px 10px;
-  font-weight: bold;
+  margin: 5px 10px 6px;
+  font-weight: 900;
 }
 .header-disk{
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .forma-shin p{
   font-size: 10px;
   margin-left: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 .pole-shin{
   font-size: 11px;
-  width: 50px;
+  width: 53px;
 }
 .forma-shin-text-up{
   font-size: 14px;
 }
 .pole-R{
-  width: 40px;
+  width: 45px;
   font-size: 11px;
   margin-bottom: 3px;
+  margin-left: 3px;
 }
 .R{
   padding-left: 29px;
@@ -385,7 +415,10 @@ line-height: 1em;
   font-size: 12px;
   position: relative;
   left: 40px;
-  top: -18px;
+  top: -20px;
+}
+.checkb p{
+  padding: 0;
 }
 .checkb input{
   margin-top: 0;
@@ -396,18 +429,15 @@ line-height: 1em;
   height: 10px;
   line-height: 0;
 }
-}
-.disk-colon2 .more{
-  display: inline-block;
-  text-align:  right;
+.more{
+  position: relative;
+  left: 5px;
 
-  -margin-right: 10px;
-  -margin-top: -2px;
 }
 .more-shin{
   position: relative;
   right: -115px;
-  bottom: 25px;
+  bottom: 20px;
 }
 .more-avto{
   position: relative;
@@ -436,17 +466,20 @@ line-height: 8px;
 }
 .mark-avto{
   width: 100px;
-  font-size: 8px;
+  font-size: 11px;
   position: absolute;
   left: 85px;
-  top: -5px;
+  /*-top: -5px;
+  -padding-top: 5px;*/
+  bottom: 0.5px;
 }
 .god-avto{
   width: 55px;
-  font-size: 8px;
+  font-size: 11px;
   position: absolute;
   left: 85px;
-  top: -5px;
+  /*top: -5px;*/
+    bottom: 4px;
 }
 .text-ser{
   -border: 1px solid black;
@@ -509,10 +542,11 @@ width: 185px;
   font-size: 14px;
   color: #114165;
   font-family: "Lucida Sans Unicode";
-  padding:7px 2px 7px 30px;
+  padding:7px 2px 6px 30px;
   border: 1px solid #949fa4;
   border-radius: 15px;
-  margin-top: 15px;
+  margin-top: 12px;
+  width: 116px;
 }
 .title-left::before{
   content: "";
@@ -529,15 +563,15 @@ width: 185px;
 .spisok{
 }
 .spisok li{
-  margin: 10px 30px;
+  margin: 3px 0 9px 52px;
   list-style-type: circle;
-  -padding-left: 20px;
 }
 .spisok li a{
   text-decoration: none;
   font-size: 13px;
   font-family: "Lucida Sans Unicode";
   color: #465961;
+  margin-left: -5px;
 }
 .spisok li a:hover{
   cursor: pointer;
@@ -548,11 +582,15 @@ width: 185px;
   font-weight: bold;
   font-style: italic;
 }
+.spisok li:last-child{
+  margin-bottom: -6px;
+}
 .container .center-colon{
   display:  inline-block;
   width: 525px;
   background-color: #dde1e3;
   float: left;
+  height: 630px;
 }
 .center-colon:after{
   content: "";
@@ -571,9 +609,10 @@ width: 185px;
   height: 128px;
   background-color: white;
   margin-top: 1px;
+  border-radius: 5px;
 }
 .tovar{
-  margin: 15px 15px;
+  margin: 15px 10px 10px 20px;
   display: inline-block;
 }
 h2{
@@ -587,11 +626,12 @@ h3{
   font-size: 13px;
   font-family: "Lucida Sans Unicode";
   text-align: center;
+  line-height: 0.9em;
 }
 .price{
   color: #114165;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
   font-family: "Arial";
   text-align: center;
@@ -619,7 +659,7 @@ h3{
   font-family: "Arial";
 }
 .header-right{
-  padding:7px 85px 7px 30px;
+  padding:7px 91px 6px 30px;
   border: 1px solid #949fa4;
   border-radius: 15px;
   font-size: 13px;
@@ -635,16 +675,18 @@ h3{
   background-position: left;
   width: 20px;
   height: 21px;
-  margin-left: -25px;
-  margin-top: -5px;
+  margin-left: -27px;
+  margin-top: -6px;
   position: absolute;
 
 }
 .title-right{
-padding:7px 2px 7px 30px;
+padding:7px 2px 6px 30px;
 border: 1px solid #949fa4;
 border-radius: 15px;
-margin-top: 15px;
+margin-top: 12px;
+margin-left: 14px;
+width: 102px;
 }
 
 .title-right::before{
@@ -664,17 +706,21 @@ margin-top: 15px;
   font-family: "Lucida Sans Unicode";
   color: #465961;
   display: block;
-  margin: 10px 20px;
+  margin: 4px 20px;
 
 }
 .right-check p{
-  padding-left: 15px;
+  padding-left: 8px;
   display: inline-block;
+}
+.right-check p:last-child{
+  margin-bottom: 1px;
 }
 .submit-form{
   display: block;
-  text-align: center;
-  margin-top: 20px;
+  -text-align:  left;
+  margin-top: 22px;
+  margin-left: 21px;
 }
 .submit-form-buttons{
   background-image: url(../img/submit-buttons.png);
@@ -693,10 +739,10 @@ margin-top: 15px;
 }
 .logo-sponsor img{
   display:  inline-block;
-  -width: 676px;
-  -height: 27px;
-  margin-top: 38px;
-  margin-bottom: 25px;
+  /*-width: 676px;
+  -height: 27px;*/
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 .page{
   height: 100px;
@@ -705,7 +751,7 @@ margin-top: 15px;
 }
 .footer-page li{
   display: inline-block;
-  margin: 15px 10px;
+  margin: 10px 10px;
 }
 .footer-page li a{
   color: #bec6c9;
@@ -735,6 +781,7 @@ margin-top: 15px;
   color: #7f4740;
   font-size: 10px;
   text-align: center;
+  margin-top: 5px;
 }
 
 
