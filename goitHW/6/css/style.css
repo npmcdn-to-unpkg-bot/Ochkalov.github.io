@@ -115,6 +115,7 @@ margin-left: 2px;
 }
 .cart-site img{
   padding-left: 4px;
+  cursor: pointer;
 }
 .logo{
   margin-top: 8px;
@@ -438,11 +439,12 @@ line-height: 1em;
   position: relative;
   right: -115px;
   bottom: 20px;
+  cursor: pointer;
 }
 .more-avto{
   position: relative;
   left: 340px;
-
+  cursor: pointer;
 }
 .more-sub{
   color: #154467;
@@ -450,6 +452,7 @@ line-height: 1em;
   font-size: 14px;
   border: none;
   background-color: white;
+  cursor: pointer;
 
 }
 .forma_avto p{
@@ -523,6 +526,7 @@ width: 185px;
   color: #114165;
   font-family: "Lucida Sans Unicode";
   vertical-align: middle;
+  box-shadow: 0 1px 2px #3c4367;
 
 }
 .header-left::before{
@@ -666,6 +670,7 @@ h3{
   color: #114165;
   font-family: "Lucida Sans Unicode";
   vertical-align: middle;
+  box-shadow: 0 1px 2px #3c4367;
 }
 .header-right::before{
   content: "";
@@ -723,6 +728,7 @@ width: 102px;
   margin-left: 21px;
 }
 .submit-form-buttons{
+  cursor: pointer;
   background-image: url(../img/submit-buttons.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -757,6 +763,7 @@ width: 102px;
   color: #bec6c9;
   font-size: 12px;
   text-decoration: none;
+  cursor: pointer;
   -border: 1px solid black;
 }
 .footer-page li a:hover{
