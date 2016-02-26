@@ -415,7 +415,7 @@ line-height: 1em;
 .checkb{
   font-size: 12px;
   position: relative;
-  left: 40px;
+  left: 38px;
   top: -20px;
 }
 .checkb p{
@@ -546,11 +546,13 @@ width: 185px;
   font-size: 14px;
   color: #114165;
   font-family: "Lucida Sans Unicode";
-  padding:7px 2px 6px 30px;
+  padding:0 0 0 30px;
+  vertical-align: middle;
+  line-height: 26px;
   border: 1px solid #949fa4;
   border-radius: 15px;
   margin-top: 12px;
-  width: 116px;
+  width: 118px;
 }
 .title-left::before{
   content: "";
@@ -561,7 +563,7 @@ width: 185px;
   width: 23px;
   height: 23px;
   margin-left: -25px;
-  margin-top: -5px;
+  margin-top: 1px;
   position: absolute;
 }
 .spisok{
@@ -686,12 +688,15 @@ h3{
 
 }
 .title-right{
-padding:7px 2px 6px 30px;
+padding:0 0 0 30px;
+vertical-align: middle;
+line-height: 26px;
 border: 1px solid #949fa4;
 border-radius: 15px;
-margin-top: 12px;
+margin-top: 13px;
 margin-left: 14px;
 width: 102px;
+font-family: "Lucida Sans Unicode";
 }
 
 .title-right::before{
@@ -703,7 +708,7 @@ width: 102px;
   width: 23px;
   height: 23px;
   margin-left: -25px;
-  margin-top: -5px;
+  margin-top: 1px;
   position: absolute;
 }
 .right-check{
@@ -729,13 +734,17 @@ width: 102px;
 }
 .submit-form-buttons{
   cursor: pointer;
-  background-image: url(../img/submit-buttons.png);
-  background-position: center;
-  background-repeat: no-repeat;
   color: white;
+  background: #1E4568;
+  box-shadow: 1px 1px 5px #666;
+  border-radius: 12px;
   width: 80px;
   height: 26px;
   border: none;
+  outline: none;
+  /*background-image: url(../img/submit-buttons.png);
+  background-position: center;
+  background-repeat: no-repeat;*/
 }
 /*Container*/
 /*Footer*/
