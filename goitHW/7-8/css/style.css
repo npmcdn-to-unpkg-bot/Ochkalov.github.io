@@ -1,0 +1,228 @@
+  body{
+    font-family: Arial, sans-serif;
+  }
+  .clearfix{
+    clear: both;
+  }
+  header{
+    width: auto;
+    height: 100%;
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+  }
+  .container-logo-menu{
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  .site-logo{
+    float: left;
+  }
+  .menu-item{
+    display: inline-block;
+
+  }
+  .menu-list{
+    float: left;
+    list-style: none;
+    padding: 30px 20px 0;
+    -border: 2px solid black;
+  }
+  .menu-list a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+  }
+  .menu-list:hover{
+    text-decoration: underline;
+  }
+  .header-slider-polosa{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 175px;
+    margin-bottom: 170px;
+    height: 400px;
+  }
+  .slider-title{
+    text-transform:capitalize;
+    color: white;
+    font-size: 30px;
+    display: block;
+    padding-top: 95px;
+  }
+  .slider-subtitle{
+    display: block;
+    text-transform: uppercase;
+    color: #edbfff;
+    font-size: 20px;
+    margin: 5px 0 10px;
+  }
+  .slider-text{
+    display: block;
+    color: white;  /*#787878*/
+    font-size: 16px;
+  }
+  .slider-polosa-alltext{
+    width: 496px;
+    position: relative;
+    line-height: 20px;
+  }
+  .slider-block{
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+    -border: 2px solid black;
+  }
+  .img-slide{
+    display: block;
+    text-align: right;
+    position: absolute;
+    right: 90px;
+    top: -15px;
+  }
+  .slide-block-check{
+    position: absolute;
+    right: 200px;
+    bottom: -280px;
+
+  }
+  .slide-check{
+    float: left;
+    background-image: url(../img/sprite-check.png);
+    height: 16px;
+    width: 16px;
+    display: block;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  .slide-check:active{
+    background-image: url(../img/sprite-check.png);
+    background-position: 0 18px;
+    width: 16px;
+    height: 16px;
+
+  }
+  .slider-block:before{
+    content: "";
+    display: block;
+    background-image: url(../img/strelki.png);
+    background-position: left;
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    left: -10%;
+    top: 90%;
+  }
+  .slider-block:after{
+    content: "";
+    display: block;
+    background-image: url(../img/strelki.png);
+    background-position: right;
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    right: -10%;
+    top: 90%;
+  }
+  /*Blue block*/
+  .blue-block{
+    background-image: url(../img/blue-pole.png);
+    background-repeat: repeat-x;
+    height: 342px;
+}
+.blue-block-all{
+  width: 900px;
+  margin: 0 auto;
+}
+.blue-container{
+  width: 222px;
+  display: inline-block;
+  margin-left: 64px;
+  position: relative;
+}
+.icon1:before{
+  content: "";
+  background-image: url(../img/icon.png);
+  display:  inline-block;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  top: 85px;
+  left: -60px;
+}
+.icon2:before{
+  content: "";
+  background-image: url(../img/icon.png);
+  background-position: 29px 0;
+  display:  inline-block;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  top: 85px;
+  left: -60px;
+}
+.icon3:before{
+  content: "";
+  background-image: url(../img/icon.png);
+  background-position: 61px 0;
+  display:  inline-block;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  top: 85px;
+  left: -60px;
+}
+
+
+.blue-container-title{
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  margin-top: 82px;
+}
+.blue-container-text{
+  font-size: 14px;
+  color: #cfd0d1;
+  line-height:  20px;;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+.more{
+  font-size: 14px;
+  color: white;
+  margin-top: 20px;
+  margin-right: 9px;
+  text-align: right;
+}
+.more a{
+  text-decoration: none;
+  color: white;
+}
+.more a:hover{
+  text-shadow: 0 0 10px white;
+  color: white;
+}
+  /*Blue block*/
+  /*Avtor*/
+  .avtor{
+    height: 485px;
+  }
+  /*Avtor*/
+  /*Company*/
+  .company{
+    height: 120px;
+    border: 1px solid grey;
+  }
+  /* end Company*/
+  /*Pre footer*/
+  .pre-footer{
+    height: 396px;
+    background-color: #ececec;
+  }
+  /* End Pre footer*/
+  /*footer*/
+  .footer-bg{
+    background-image: url(../img/footer-bg.jpg);
+    height: 119px;
+  }
