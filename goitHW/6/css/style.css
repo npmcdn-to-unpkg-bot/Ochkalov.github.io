@@ -548,7 +548,8 @@ width: 185px;
   font-family: "Lucida Sans Unicode";
   padding:0 0 0 30px;
   vertical-align: middle;
-  line-height: 26px;
+  line-height: 28px;
+  height: 26px;
   border: 1px solid #949fa4;
   border-radius: 15px;
   margin-top: 12px;
@@ -560,10 +561,10 @@ width: 185px;
   background-image: url(../img/icon-disk.png);
   background-repeat: no-repeat;
   background-position: left;
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   margin-left: -25px;
-  margin-top: 1px;
+  margin-top: 0;
   position: absolute;
 }
 .spisok{
@@ -626,13 +627,15 @@ h2{
   font-size: 15px;
   font-weight: bold;
   font-family: "Lucida Sans Unicode";
+  line-height: 13px;
   text-align: center;
 }
 h3{
   font-size: 13px;
+  line-height: 13px;
   font-family: "Lucida Sans Unicode";
   text-align: center;
-  line-height: 0.9em;
+  
 }
 .price{
   color: #114165;
@@ -690,12 +693,13 @@ h3{
 .title-right{
 padding:0 0 0 30px;
 vertical-align: middle;
-line-height: 26px;
+line-height: 28px;
+height: 26px;
 border: 1px solid #949fa4;
-border-radius: 15px;
+border-radius: 12px;
 margin-top: 13px;
-margin-left: 14px;
-width: 102px;
+margin-left: 13px;
+width: 103px;
 font-family: "Lucida Sans Unicode";
 }
 
@@ -711,6 +715,32 @@ font-family: "Lucida Sans Unicode";
   margin-top: 1px;
   position: absolute;
 }
+.title-right2{
+  padding:0 0 0 29px;
+  vertical-align: middle;
+  line-height: 28px;
+  height: 26px;
+  border: 1px solid #949fa4;
+  border-radius: 12px;
+  margin-top: 13px;
+  margin-left: 13px;
+  width: 104px;
+  font-size: 14px;
+  font-family: "Lucida Sans Unicode";
+}
+.title-right2::before{
+  content: "";
+  display:  inline-block;
+  background-image: url(../img/icon-disk.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 25px;
+  height: 25px;
+  margin-left: -27px;
+  margin-top: 0;
+  position: absolute;
+}
+
 .right-check{
   font-size: 13px;
   font-family: "Lucida Sans Unicode";
