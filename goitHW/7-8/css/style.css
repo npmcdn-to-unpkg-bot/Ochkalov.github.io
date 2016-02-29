@@ -356,12 +356,31 @@ header{
 }
 
   /*Blue block*/
+
+@media (max-width: 480px){
+  .blue-block{
+    background-image: url(../img/blue-pole.png);
+    background-repeat: repeat-x;
+    height: 600px;
+ }
+  .blue-block-all{
+    width: 365px;
+  }
+  .blue-container{
+    width: 364px;
+    display: inline-block;
+    margin-left: 64px;
+    position: relative;
+  }
+  
+
+}
+@media (min-width: 960px){
   .blue-block{
     background-image: url(../img/blue-pole.png);
     background-repeat: repeat-x;
     height: 342px;
 }
-@media (min-width: 960px){
   .blue-block-all{
     width: 900px;
     margin: 0 auto;
@@ -377,6 +396,11 @@ header{
 }
 }
 @media (max-width:768px) {
+  .blue-block{
+    background-image: url(../img/blue-pole.png);
+    background-repeat: repeat-x;
+    height: 342px;
+  }
   .blue-block-all{
     width: 768px;
   }
@@ -390,11 +414,7 @@ header{
     font-size: 24px;
   }
 }
-@media (max-width: 480px){
-  .blue-block-all{
-    width: 100%;
-  }
-}
+
 .icon1:before{
   content: "";
   background-image: url(../img/icon.png);
