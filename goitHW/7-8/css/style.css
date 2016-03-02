@@ -25,17 +25,19 @@ header{
     box-sizing: border-box;
     overflow: hidden;
   }
-@media (min-width: 960px){
+@media (min-width: 769px){
   .container-logo-menu{
     width: 960px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 50px;
+    -outline: 1px solid #000;
   }
   .site-logo{
     float: left;
   }
   .menu-item{
       display: inline-block;
+      margin-left: 120px;
     }
   .menu-item480{
       display: none;
@@ -160,7 +162,7 @@ header{
 .menu-list{
     float: left;
     list-style: none;
-    padding: 30px 20px 0;
+    padding: 24px 0 0 52px;
     -border: 2px solid black;
   }
 .menu-list a{
@@ -213,7 +215,7 @@ header{
     line-height: 30px;
   }
 }
-@media (min-width: 960px){
+@media (min-width: 769px){
   .header-slider-polosa{
       background-color: rgba(0, 0, 0, 0.2);
       margin-top: 175px;
@@ -221,20 +223,22 @@ header{
       height: 400px;
     }
   .slider-title{
-    padding-top: 20%;
+    padding-top: 19%;
     font-size: 60px;
     line-height: 36px;
   }
   .slider-subtitle{
     font-size: 32px;
     line-height: 36px;
-    margin: 8px 0 10px;
+    margin: 8px 0 3px;
   }
   .slider-text{
     font-size: 18px;
     line-height: 24px;
+    font-family: "Open Sans";
   }
 }
+/************************************/
 .slider-title{
   text-transform:capitalize;
   color: white;
@@ -250,7 +254,7 @@ header{
     display: block;
     color: white;  /*#787878*/
   }
-@media (min-width: 960px){
+@media (min-width: 769px){
   .slider-polosa-alltext{
     width: 496px;
     position: relative;
@@ -261,8 +265,8 @@ header{
     height: 415px;
     width: 280px;
     position: absolute;
-    right: 50px;
-    top: -19px;
+    right: 65px;
+    top: -21px;
     display: block;
     text-align: right;
   }
@@ -380,23 +384,20 @@ header{
     display: block;
   }*/
 }
-@media (min-width: 960px){
+@media (min-width: 769px){
   .slider-block{
     margin: 0 auto;
     width: 960px;
     position: relative;
     -border: 2px solid black;
   }
-
-/*  .v480{
-    display: none;
-  }*/
-  .slide-block-check{
+ .slide-block-check{
     position: absolute;
-    right: 200px;
-    bottom: -280px;
+    right: 170px;
+    bottom: -238px;
   }
 }
+/**********************/
   .slide-check{
     float: left;
     background-image: url(../img/sprite-check.png);
@@ -412,7 +413,7 @@ header{
     width: 16px;
     height: 16px;
   }
-  @media (min-width: 960px){
+  @media (min-width: 769px){
   .slider-block:before{
     content: "";
     display: block;
@@ -421,8 +422,8 @@ header{
     width: 25px;
     height: 40px;
     position: absolute;
-    left: -10%;
-    top: 70%;
+    left: -33%;
+    top: 66%;
   }
   .slider-block:after{
     content: "";
@@ -432,8 +433,8 @@ header{
     width: 25px;
     height: 40px;
     position: absolute;
-    right: -10%;
-    top: 70%;
+    right: -33%;
+    top: 66%;
   }
 }
 @media (max-width: 768px){
@@ -547,43 +548,51 @@ header{
     display: none;
   }
 }
-@media (min-width: 960px){
+@media (min-width: 769px){
   .blue-block{
     background-image: url(../img/blue-pole.png);
     background-repeat: repeat-x;
     height: 342px;
 }
   .blue-block-all{
-    width: 900px;
+    width: 980px;
     margin: 0 auto;
+    -outline: 1px solid black;
+    -font-size: 0;
 }
   .blue-container{
-    width: 222px;
+    width: 220px;
     display: inline-block;
-    margin-left: 64px;
+    margin-left: 72px;
+    margin-right: 44px;
     position: relative;
+    -outline: 1px solid black;
+    padding: 0;
 }
+#right_marg-0{
+  margin-right: 0;
+}
+
   .blue-container-title{
-    font-size: 30px;
-  }
-  .blue-container-title{
+  font-size: 30px;
   color: white;
-  margin-top: 80px;
+  margin-top: 77px;
+  margin-bottom: 10px;
   }
   .more{
-    margin-top: 25px;
+    margin-top: 18px;
   }
   .icon1:before{
-    top: 85px;
-    left: -60px;
+    top: 84px;
+    left: -54px;
   }
   .icon2:before{
-    top: 85px;
-    left: -60px;
+    top: 84px;
+    left: -54px;
   }
   .icon3:before{
-    top: 85px;
-    left: -60px;
+    top: 84px;
+    left: -54px;
   }
 
 }
@@ -624,6 +633,7 @@ header{
   }
 
 }
+/*******************************/
 
 .icon1:before{
   content: "";
@@ -666,7 +676,7 @@ header{
 .more{
   font-size: 18px;
   color: white;
-  margin-right: 9px;
+/*  margin-right: 9px;  */
   text-align: right;
 }
 .more a{
@@ -681,30 +691,36 @@ header{
   /*Avtor*/
 
   /*Avtor*/
-@media (min-width: 960px){
+@media (min-width: 769px){
   .avtor{
     height: 485px;
   }
 .avtor-block-all{
-  width: 877px;
+  width: 880px;
   margin: 0 auto;
 }
 .avtor-container{
   width: 360px;
-  margin-left: 54px;
+  margin-left: 23px;
   margin-top: 130px;
   padding-bottom: 40px;
   box-shadow: 0 5px 5px #efefef;
 }
 .avtor-container-upd{
-  width: 400px;
+  width: 411px;
   box-shadow:none;
+  margin-left: 86px;
 }
   .avtor-title{
     font-size: 30px;
   }
   .avtor-slide-block-check{
-    left: 40%;
+    left: 34%;
+  }
+  .avtor-more{
+    padding: 0;
+    margin-top: 28px;
+    margin-right: -19px;
   }
 }
 @media (min-width: 481px) and (max-width:768px){
@@ -822,7 +838,7 @@ header{
   color: #edbfff;
 }
 .avtor-first-line{
-  margin: 20px 0 1px 60px;
+  margin: 20px 0 1px 65px;
 }
 .avtor-text{
   /*margin-top: 15px;*/
@@ -832,7 +848,7 @@ header{
   font-family: "Open Sans";
 }
 .avtor-text__otstup{
-  margin-left: 60px;
+  margin-left: 65px;
 }
 .avtor-container__img:before{
   content: "";
@@ -841,12 +857,12 @@ header{
   width: 50px;
   height: 51px;
   position: absolute;
-  left: -70px;
-  top: -10px;
+  left: -64px;
+  top: -12px;
 }
 .avtor-slide-block-check{
   position: absolute;
-  bottom: -45px;
+  bottom: -60px;
 }
 
 .avtor-slide-check{
@@ -882,7 +898,7 @@ header{
   width: 49px;
   height: 49px;
   position: absolute;
-  left: -1px;
+  left: 1px;
   top: 45px;
 }
 .avtor-line__icon2::before{
@@ -892,8 +908,8 @@ header{
   width: 49px;
   height: 49px;
   position: absolute;
-  left: -1px;
-  top: 105px;
+  left: 1px;
+  top: 112px;
 }
 .avtor-line__icon3::before{
   content: "";
@@ -902,8 +918,8 @@ header{
   width: 49px;
   height: 49px;
   position: absolute;
-  left: -1px;
-  top: 170px;
+  left: 1px;
+  top: 177px;
 }
 .avtor-container .avtor-more a{
   color: #454545;
@@ -911,15 +927,15 @@ header{
 }
 /*Company*/
 .company{
-
-  border: 1px solid grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
   display: block;
   text-align: center;
 }
 .company img{
   padding-top: 25px;
 }
-@media (min-width: 960px){
+@media (min-width: 769px){
   .company{
     height: 120px;
   }
@@ -994,9 +1010,9 @@ header{
     width: 237px;
   }
 }
-
-
   /* end Company*/
+
+
   /*Pre footer*/
 @media (max-width: 320px){
   .pre-footer{
@@ -1004,32 +1020,41 @@ header{
   }
 }
 
-@media (min-width: 960px){
+@media (min-width: 769px){
   .pre-footer{
     height: 396px;
     background-color: #ececec;
     display: block;
 }
  .pre-footer-block-all{
-   width: 900px;
+   width: 960px;
    margin: 0 auto;
  }
  .pre-footer-container{
-   width: 222px;
-   margin-left: 64px;
+   width: 280px;
+   margin-left: 0;
+   margin-right: 57px;
+   -border: 1px solid #000;
+ }
+ #pre-foo-right_marg-0{
+   margin-right: 0;
+   margin-left: 2px;
  }
  .v960fs{
   font-size: 48px;
  }
  .pre-footer-container-title{
    font-size: 30px;
+
  }
  .pre-footer-first-line{
    font-style: italic;
    color:#b9b9b9;
-   font-size: 14px;
-   line-height:  20px;
-   margin: 15px 0
+   font-size: 16px;
+   line-height:  24px;
+   margin: 10px 0 -5px;
+   font-family: Georgia;
+
  }
  .w960hiden{
    display: none;
@@ -1092,14 +1117,14 @@ header{
     display: none;
   }
 }
-
+/***********************************************/
 .pre-footer-container{
   float: left;
   position: relative;
 }
 .pre-footer-container-title{
   color: black;
-  margin-top: 82px;
+  margin-top: 95px;
 }
 .pre-footer-container-text{
   font-size: 16px;
@@ -1116,7 +1141,7 @@ header{
   /* End Pre footer*/
   /*footer*/
 
-@media (min-width: 960px){
+@media (min-width: 769px){
   .footer-bg{
     background-image: url(../img/footer-bg.jpg);
     height: 119px;
@@ -1124,7 +1149,7 @@ header{
  .footer-conteiner{
   width: 960px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 18px;
   -border: 1px solid black;
   }
   .footer-conteiner nav{
@@ -1134,6 +1159,10 @@ header{
     padding-top: 35px;
     float: right;
   }
+  .footer-menu{
+    margin-left: 0;
+  }
+
 }
 @media (min-width: 481px) and (max-width:768px){
   .footer-menu .menu-list a{
@@ -1172,6 +1201,13 @@ header{
   display: inline-block;
   line-height: 33px;
 }
+.footer-menu .menu-list{
+  padding: 23px 40px 0 0;
+}
+
+.footer-menu a{
+  font-size: 20px;
+}
 @media (max-width: 320px){
   .footer-menu{
     display: none;
@@ -1193,7 +1229,7 @@ header{
   /*border: 1px solid black;*/
   font-family: "Open Sans";
   color: white;
-  margin-right: 20px;
+/*  margin-right: 20px;*/
 }
 .footer-bold{
   font-weight: 900;
