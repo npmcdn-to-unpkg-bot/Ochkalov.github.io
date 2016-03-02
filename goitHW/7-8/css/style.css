@@ -42,11 +42,14 @@ header{
   .menu-item480{
       display: none;
   }
+  .menu-list{
+    padding: 24px 0 0 52px;
+  }
 }
 @media (min-width: 481px) and (max-width: 768px){
   .container-logo-menu{
     width: 768px;
-    padding-top: 70px;
+    padding-top: 50px;
   }
   .site-logo{
     display: block;
@@ -60,6 +63,9 @@ header{
   }
   .menu-item480{
     display: none;
+  }
+  .menu-list{
+    padding: 32px 30px 0 20px;
   }
 }
 @media (max-width: 480px){
@@ -162,8 +168,8 @@ header{
 .menu-list{
     float: left;
     list-style: none;
-    padding: 24px 0 0 52px;
-    -border: 2px solid black;
+  /*  padding: 24px 0 0 52px;
+    -border: 2px solid black;  */
   }
 .menu-list a{
     text-decoration: none;
@@ -195,20 +201,20 @@ header{
 @media (min-width: 481px) and (max-width: 768px){
   .header-slider-polosa{
     background-color: rgba(0, 0, 0, 0.2);
-    margin-top: 80px;
-    margin-bottom: 155px;
+    margin-top: 75px;
+    margin-bottom: 153px;
     height: 400px;
   }
   .slider-title{
     display: block;
     -border: 1px solid black;
-    padding-top: 34%;
+    padding-top: 41%;
     font-size: 48px;
   }
   .slider-subtitle{
     font-size: 24px;
     line-height: 36px;
-    margin: 12px 0 1px;
+    margin: 14px 0 1px;
   }
   .slider-text{
     font-size: 16px;
@@ -275,7 +281,7 @@ header{
 @media (max-width: 768px){
   .slider-polosa-alltext{
     width: 270px;
-    margin-left: 5%;
+    margin-left: 6%;
     position: relative;
     line-height: 20px;
   }
@@ -291,13 +297,13 @@ header{
     height: 415px;
     width: 280px;
     position: absolute;
-    right: 50px;
-    top: -19px;
+    right: 23px;
+    top: -30px;
   }
   .slide-block-check{
     position: absolute;
-    right: 155px;
-    bottom: -60%;
+    right: 128px;
+    bottom: -50%;
   }
 }
 @media (min-width: 321px) and (max-width: 480px){
@@ -447,7 +453,7 @@ header{
     height: 40px;
     position: absolute;
     left: 0;
-    top: 65%;
+    top: 60%;
   }
   .slider-block:after{
     content: "";
@@ -458,7 +464,7 @@ header{
     height: 40px;
     position: absolute;
     right: 0;
-    top: 65%;
+    top: 60%;
   }
 }
 /*****************/
@@ -563,8 +569,8 @@ header{
   .blue-container{
     width: 220px;
     display: inline-block;
-    margin-left: 72px;
-    margin-right: 44px;
+    margin-left: 62px;  /*margin-left: 72px;*/
+    margin-right: 54px;  /*margin-right: 44px;*/
     position: relative;
     -outline: 1px solid black;
     padding: 0;
@@ -572,7 +578,6 @@ header{
 #right_marg-0{
   margin-right: 0;
 }
-
   .blue-container-title{
   font-size: 30px;
   color: white;
@@ -609,6 +614,7 @@ header{
     width: 150px;
     display: inline-block;
     margin-left: 84px;
+    margin-right: 12px;
     position: relative;
   }
   .blue-container-title{
@@ -616,20 +622,23 @@ header{
     color: white;
     margin-top: 80px;
   }
+  #right_marg-0{
+    margin-left: 100px;
+  }
   .more{
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .icon1:before{
-    top: 85px;
-    left: -60px;
+    top: 80px;
+    left: -51px;
   }
   .icon2:before{
-    top: 85px;
-    left: -60px;
+    top: 80px;
+    left: -51px;
   }
   .icon3:before{
-    top: 85px;
-    left: -60px;
+    top: 80px;
+    left: -51px;
   }
 
 }
@@ -716,6 +725,7 @@ header{
   }
   .avtor-slide-block-check{
     left: 34%;
+    bottom: -60px;
   }
   .avtor-more{
     padding: 0;
@@ -728,12 +738,12 @@ header{
     height: 485px;
   }
   .avtor-block-all{
-    width: 663px;
+    width: 730px;
     margin: 0 auto;
   }
   .avtor-container{
     width: 240px;
-    margin-left: 34px;
+    margin-left: 71px;
     margin-top: 130px;
     padding-bottom: 40px;
     box-shadow: 0 5px 5px #efefef;
@@ -741,7 +751,7 @@ header{
   .avtor-container-upd{
     width: 300px;
     box-shadow:none;
-
+    margin-left: 93px;
   }
   .avtor-title{
     font-size: 24px;
@@ -756,7 +766,13 @@ header{
     font-size: 30px;
   }
   .avtor-slide-block-check{
-    left: 40%;
+    left: 29%;
+    bottom: -45px;
+  }
+  .avtor-more{
+    padding: 0;
+    margin-top: 15px;
+    margin-right: -19px;
   }
 }
 @media (min-width: 321px) and (max-width: 480px){
@@ -789,7 +805,9 @@ header{
   }
   .avtor-slide-block-check{
     left: 40%;
+    bottom: -60px;
   }
+
 }
 @media (max-width: 320px){
   .avtor{
@@ -820,6 +838,7 @@ header{
   }
   .avtor-slide-block-check{
     left: 25%;
+    bottom: -60px;
   }
 }
 /***********************************/
@@ -849,6 +868,7 @@ header{
 }
 .avtor-text__otstup{
   margin-left: 65px;
+  padding-bottom: 5px;
 }
 .avtor-container__img:before{
   content: "";
@@ -862,7 +882,6 @@ header{
 }
 .avtor-slide-block-check{
   position: absolute;
-  bottom: -60px;
 }
 
 .avtor-slide-check{
@@ -925,7 +944,7 @@ header{
   color: #454545;
   font-size: 18px;
 }
-/*Company*/
+                  /*Company*/
 .company{
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
@@ -952,6 +971,10 @@ header{
 @media (min-width: 481px) and (max-width: 768px){
   .company{
     height: 120px;
+  }
+  .company img{
+    padding-top: 27px;
+    padding-left: 15px;
   }
   .v960{
     display: none;
@@ -1045,6 +1068,7 @@ header{
  }
  .pre-footer-container-title{
    font-size: 30px;
+   margin-top: 95px;
 
  }
  .pre-footer-first-line{
@@ -1066,22 +1090,30 @@ header{
     background-color: #ececec;
     display: block;
 }
-  /*.pre-footer-block-all{
-    -width: 733px;
+  .pre-footer-block-all{
+    width: 760px;
     -margin: 0 auto;
-  }*/
+  }
   .pre-footer-container{
-    width: 204px;
+    width: 213px;
     margin-left: 20px;
-    margin-right: 25px;
+    margin-right: 35px;
+  }
+  #pre-foo-right_marg-0{
+    margin-left: 10px;
+    margin-right: 0;
   }
   .v960fs{
    display: none;
   }
   .pre-footer-container-title{
     font-size: 24px;
+    margin-top: 102px;
   }
   .pre-footer-first-line{
+    display: none;
+  }
+  .more{
     display: none;
   }
 }
@@ -1124,7 +1156,7 @@ header{
 }
 .pre-footer-container-title{
   color: black;
-  margin-top: 95px;
+/*  margin-top: 95px;     */
 }
 .pre-footer-container-text{
   font-size: 16px;
@@ -1167,13 +1199,24 @@ header{
 @media (min-width: 481px) and (max-width:768px){
   .footer-menu .menu-list a{
     font-size: 20px;
+    padding-right: 3px;
   }
+  .footer-conteiner{
+   -width: 768px;
+   -margin: 0 auto;
+   padding-top: 20px;
+   -border: 1px solid black;
+   }
+   .footer-menu{
+     margin-left: 20px;
+   }
   .footer-bg{
     background-image: url(../img/footer-bg-768.jpg);
     height: 201px;
   }
   .copyrait{
       float:  right;
+      padding-top: 25px;
   }
 }
 
