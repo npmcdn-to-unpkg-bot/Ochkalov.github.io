@@ -39,6 +39,7 @@ header{
       display: inline-block;
       margin-left: 120px;
     }
+
   .menu-item480{
       display: none;
   }
@@ -144,7 +145,7 @@ header{
 /*  -margin: 2px 10px;  */
  }
   .menu-list a:hover{
-   text-decoration: underline;
+   -text-decoration: underline;
    text-decoration-color: #edbfff;
  }
   .menu-item480 .menu-list:hover ul{
@@ -152,8 +153,17 @@ header{
   }
   .menu-item480 ul .menu-list:hover{
     background-color: rgba(38, 52, 62, 1);
-    border-radius: 15px;
+    -border-radius: 15px;
+    border-bottom: 2px solid #edbfff;
+    text-decoration:none;
   }
+    .menu-item480 .menu-list ul li:first-child:hover{
+      border-radius: 15px 15px 0 0;
+    }
+    .menu-item480 .menu-list ul li:last-child:hover{
+      border-radius: 0 0 15px 15px;
+    }
+
     .menu-list-ferst:hover{
       font-size: 0;
     }
@@ -188,6 +198,8 @@ header{
 }
 .menu-list:hover{
     text-decoration: underline;
+    text-decoration-color: black; /*#edbfff*/
+
 }
 /***************************/
 @media (max-width: 320px){
