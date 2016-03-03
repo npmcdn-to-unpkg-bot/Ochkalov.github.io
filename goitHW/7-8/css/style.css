@@ -192,7 +192,7 @@ header{
 /***************************/
 @media (max-width: 320px){
   .header-slider .header-slider-polosa{
-      margin-top: 140px;
+      margin-top: 132px;
       margin-bottom: 160px;
       -height: 245px;
     }
@@ -346,18 +346,6 @@ header{
     right: 41%;
     bottom: -90%;
   }
-
-
-/*
-  .img-slide .v480{
-    display: block;
-    visibility: visible;
-    position: relative;
-  }
-  .v960-768{
-    display: none;
-    visibility: hidden;
-  }*/
 }
 @media (max-width: 320px){
   .slider-polosa-alltext{
@@ -383,7 +371,7 @@ header{
   }
   .slide-block-check{
     position: absolute;
-    right: 40%;
+    right: 36%;
     bottom: -170%;
   }
 }
@@ -570,20 +558,28 @@ header{
 
 }
 @media (max-width: 320px){
-  .blue-block-all{
-    width: 210px;
-    padding-top: 35px;
+    .blue-block-all{
+    width: 210px;  /*210px*/
+    padding-top: 70px;
+
   }
   .blue-container{
-    width: 210px;
+    width: 220px;
     display: inline-block;
     margin-left: 80px;
     position: relative;
-    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  .blue-container-text{
+    margin-top: 5px;
+  }
+
+  #right_marg-0{
+    margin-top: 14px;
   }
   .more{
     display: block;
-    margin-top: 20px;
+    margin-top: -9px;
   }
   .w768{
     display: none;
@@ -863,26 +859,38 @@ header{
   }
   .avtor-container{
     width: 180px;
-    margin-top: 100px;
-    margin-left: 14px;
-    padding-bottom: 40px;
+    margin-top: 95px;
+    margin-left: 10px;
+    padding-bottom: 30px;
     box-shadow: 0 5px 5px #efefef;
   }
   .title-color{
     display: block;
   }
+  .avtor-title{
+    font-size: 24px;
+  }
+  .avtor-text{
+    margin-top: -5px;
+  }
   .avtor-container-upd{
     width: 280px;
-    margin-top: 90px;
+    margin-top: 87px;
     box-shadow:none;
     margin-left: -50px;
   }
+  .avtor-container-upd .avtor-text{
+    padding-top: 5px;
+  }
+  .w768-font{
+    font-size: 30px;
+  }
   .avtor-more{
-    padding-right: 20px;
+    margin-top: 15px;
   }
   .avtor-slide-block-check{
-    left: 25%;
-    bottom: -60px;
+    left: 29%;
+    bottom: -42px;
   }
 }
 /***********************************/
@@ -924,6 +932,13 @@ header{
   left: -64px;
   top: -12px;
 }
+@media (max-width: 320px){
+  .avtor-container__img:before{
+  left: -60px;
+  top: -5px;
+  }
+}
+
 .avtor-slide-block-check{
   position: absolute;
 }
@@ -1068,8 +1083,9 @@ header{
     display: block;
   }
   .company{
-    height: 420px;
+    height: 410px;
     padding-left: 40px;
+    padding-top: 70px;
 
   }
   .company img{
@@ -1322,7 +1338,7 @@ header{
       float: none;
       display: block;
       text-align: center;
-      padding-top: 45px;
+      padding-top: 40px;
   }
 }
 /*******************/
