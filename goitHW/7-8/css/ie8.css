@@ -246,6 +246,9 @@ font-size: 48px;
 .w960hiden{
  display: none;
 }
+.pre-footer-container .more{
+  display: none;
+}
 
 
 

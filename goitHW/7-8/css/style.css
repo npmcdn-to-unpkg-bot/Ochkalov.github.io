@@ -56,7 +56,7 @@ header{
     display: block;
     float: left;
     margin-left: 20px;
-    -border: 12px solid black;
+  /*  -border: 12px solid black;*/
   }
   .menu-item{
   margin-left: 0;
@@ -145,7 +145,7 @@ header{
 /*  -margin: 2px 10px;  */
  }
   .menu-list a:hover{
-   -text-decoration: underline;
+  /* -text-decoration: underline; */
    text-decoration-color: #edbfff;
  }
   .menu-item480 .menu-list:hover ul{
@@ -153,7 +153,7 @@ header{
   }
   .menu-item480 ul .menu-list:hover{
     background-color: rgba(38, 52, 62, 1);
-    -border-radius: 15px;
+  /*  -border-radius: 15px;  */
     border-bottom: 2px solid #edbfff;
     text-decoration:none;
   }
@@ -206,7 +206,7 @@ header{
   .header-slider .header-slider-polosa{
       margin-top: 132px;
       margin-bottom: 160px;
-      -height: 245px;
+    /*  -height: 245px; */
     }
 }
 /******************/
@@ -227,7 +227,7 @@ header{
   }
   .slider-title{
     display: block;
-    -border: 1px solid black;
+  /*  -border: 1px solid black; */
     padding-top: 41%;
     font-size: 48px;
   }
@@ -404,7 +404,7 @@ header{
     margin: 0 auto;
     width: 960px;
     position: relative;
-    -border: 2px solid black;
+  /*  -border: 2px solid black; */
   }
  .slide-block-check{
     position: absolute;
@@ -606,8 +606,8 @@ header{
   .blue-block-all{
     width: 980px;
     margin: 0 auto;
-    -outline: 1px solid black;
-    -font-size: 0;
+  /*  -outline: 1px solid black;
+    -font-size: 0;   */
 }
   .blue-container{
     width: 220px;
@@ -615,7 +615,7 @@ header{
     margin-left: 62px;  /*margin-left: 72px;*/
     margin-right: 54px;  /*margin-right: 44px;*/
     position: relative;
-    -outline: 1px solid black;
+  /*  -outline: 1px solid black;  */
     padding: 0;
 }
 #right_marg-0{
@@ -721,7 +721,7 @@ header{
   font-size: 16px;
   color: #cfd0d1;
   line-height: 24px;
-  -margin-top: 10px;
+/*  -margin-top: 10px;*/
   font-weight: lighter;
   font-family: "Open Sans";
 }
@@ -821,7 +821,7 @@ header{
 @media (min-width: 321px) and (max-width: 480px){
   .avtor{
     height: 785px;
-    -overflow: hidden;
+  /*  -overflow: hidden;  */
   }
   .avtor-block-all{
     width: 345px;
@@ -908,7 +908,7 @@ header{
 /***********************************/
 .avtor-container{
   float: left;
-  -border: 1px solid black;
+/*  -border: 1px solid black; */
   position: relative;
 }
 
@@ -1101,7 +1101,7 @@ header{
 
   }
   .company img{
-    -padding-top: 38px;
+  /*  -padding-top: 38px;   */
     width: 237px;
   }
 }
@@ -1153,6 +1153,9 @@ header{
 
  }
  .w960hiden{
+   display: none;
+ }
+ .pre-footer-container .more{
    display: none;
  }
 }
@@ -1214,7 +1217,7 @@ header{
  }
  .pre-footer-container-title{
    font-size: 24px;
-   -margin-top:0;
+  /* -margin-top:0;  */
  }
  .pre-footer-first-line{
    display: none;
@@ -1256,7 +1259,7 @@ header{
   width: 960px;
   margin: 0 auto;
   padding-top: 18px;
-  -border: 1px solid black;
+/*  -border: 1px solid black;  */
   }
   .footer-conteiner nav{
     display: inline-block;
