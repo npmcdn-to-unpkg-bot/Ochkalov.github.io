@@ -981,7 +981,7 @@ header{
   left: 40%;
   bottom: -40px;
 }*/
-.avtor-line__icon1::before{
+.avtor-line__icon1:before{
   content: "";
   display: block;
   background-image: url(../img/icon1-avtor.png);
@@ -991,7 +991,7 @@ header{
   left: 1px;
   top: 45px;
 }
-.avtor-line__icon2::before{
+.avtor-line__icon2:before{
   content: "";
   display: block;
   background-image: url(../img/icon2-avtor.png);
@@ -1001,7 +1001,7 @@ header{
   left: 1px;
   top: 112px;
 }
-.avtor-line__icon3::before{
+.avtor-line__icon3:before{
   content: "";
   display: block;
   background-image: url(../img/icon3-avtor.png);

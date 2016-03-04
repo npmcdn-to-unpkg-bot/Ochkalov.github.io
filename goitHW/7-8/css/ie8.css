@@ -1,8 +1,8 @@
 /*****************/
-header{
+.forie8-header{
     background-image: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
-
+    height: 845px;
   }
 
 .container-logo-menu{
@@ -25,7 +25,7 @@ header{
   padding: 24px 0 0 52px;
 }
 .header-slider-polosa{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-image:url(../img/polosa-i8.png);
     margin-top: 175px;
     margin-bottom: 170px;
     height: 400px;
@@ -100,7 +100,7 @@ header{
 }
 
 
-
+/***************************************************/
 
 
 .blue-block{
@@ -151,7 +151,7 @@ margin-bottom: 10px;
 
 
 
-.avtor{
+.forie8-avtor{
   height: 485px;
 }
 .avtor-block-all{
@@ -185,8 +185,15 @@ margin-left: 86px;
 
 
 
-.company{
+.forie8-company{
   height: 120px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: block;
+  text-align: center;
+}
+.forie8-company img{
+  padding-top: 25px;
 }
 .v768{
   display: none;
@@ -200,7 +207,7 @@ margin-left: 86px;
 
 
 
-.pre-footer{
+.forie8-pre-footer{
   height: 396px;
   background-color: #ececec;
   display: block;
@@ -242,7 +249,8 @@ font-size: 48px;
 
 
 
-.footer-bg{
+.forie8-footer-bg{
+  display: block;
   background-image: url(../img/footer-bg.jpg);
   height: 119px;
 }
