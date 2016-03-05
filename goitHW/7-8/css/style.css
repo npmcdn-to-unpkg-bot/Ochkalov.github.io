@@ -176,7 +176,7 @@ header{
     background-color: rgba(38, 52, 62, 0.9);
     border-radius: 15px;
     left: 37px;     /*left: 115px;*/
-    top: 29px;
+    top: 20px;
     width: 245px;
     text-align: center;
     z-index: 22;
@@ -881,11 +881,11 @@ header{
     overflow: hidden;
   }
   .avtor-block-all{
-    width: 180px;
+    width: 190px;
     margin: 0 auto;
   }
   .avtor-container{
-    width: 180px;
+    width: 190px;
     margin-top: 95px;
     margin-left: 10px;
     padding-bottom: 30px;
@@ -911,7 +911,7 @@ header{
   }
   .avtor-text__otstup{
     margin-left: 65px;
-    padding-bottom: 2px;   /*5*/
+    padding-bottom: 5px;   /*5*/
   }
   .w768-font{
     font-size: 30px;
