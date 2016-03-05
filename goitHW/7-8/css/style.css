@@ -150,6 +150,7 @@ header{
  }
   .menu-item480 .menu-list:hover ul{
     display: block;
+
   }
   .menu-item480 ul .menu-list:hover{
     background-color: rgba(38, 52, 62, 1);
@@ -199,6 +200,7 @@ header{
 .menu-list:hover{
     text-decoration: underline;
     text-decoration-color: #edbfff; /*#edbfff*/
+    color: white;
 
 }
 /***************************/
