@@ -772,7 +772,7 @@ header{
   }
   .avtor-more{
     padding: 0;
-    margin-top: 28px;
+    margin-top: 23px;
     margin-right: -19px;
   }
 }
@@ -932,7 +932,7 @@ header{
 }
 .avtor-text__otstup{
   margin-left: 65px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;   /*5*/
 }
 .avtor-container__img:before{
   content: "";
