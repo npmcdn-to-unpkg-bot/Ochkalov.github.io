@@ -198,7 +198,7 @@ header{
 }
 .menu-list:hover{
     text-decoration: underline;
-    text-decoration-color: black; /*#edbfff*/
+    text-decoration-color: #edbfff; /*#edbfff*/
 
 }
 /***************************/
