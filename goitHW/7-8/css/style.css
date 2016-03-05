@@ -612,8 +612,8 @@ header{
   .blue-container{
     width: 220px;
     display: inline-block;
-    margin-left: 62px;  /*margin-left: 72px;*/
-    margin-right: 54px;  /*margin-right: 44px;*/
+    margin-left: 72px;  /*margin-left: 72px;*/  /*62px; */
+    margin-right: 44px;  /*margin-right: 44px;*/  /*54px*/
     position: relative;
   /*  -outline: 1px solid black;  */
     padding: 0;
