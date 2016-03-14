@@ -762,7 +762,7 @@ header{
   /*Avtor*/
 
   /*Avtor*/
-@media (min-width: 769px){
+@media (min-width: 960px){  /*(min-width: 769px)*/
   .avtor{
     height: 485px;
   }
@@ -798,7 +798,7 @@ header{
     margin-right: -19px;
   }
 }
-@media (min-width: 481px) and (max-width:768px){
+@media (max-width:959px){  /*(min-width: 481px) and (max-width:768px)*/
   .avtor{
     height: 485px;
   }
@@ -845,7 +845,7 @@ header{
     margin-right: -19px;
   }
 }
-@media (min-width: 321px) and (max-width: 480px){
+@media (max-width: 767px){ /*(min-width: 321px) and (max-width: 480px)*/
   .avtor{
     height: 785px;
   /*  -overflow: hidden;  */
@@ -892,7 +892,7 @@ header{
   }
 
 }
-@media (max-width: 320px){
+@media (max-width: 479px){  /*(max-width: 320px)*/
   .avtor{
     overflow: hidden;
   }
@@ -978,7 +978,7 @@ header{
   left: -64px;
   top: -12px;
 }
-@media (max-width: 320px){
+@media (max-width: 479px){  /*(max-width: 320px)*/
   .avtor-container__img:before{
   left: -60px;
   top: -5px;
@@ -1059,7 +1059,7 @@ header{
 .company img{
   padding-top: 25px;
 }
-@media (min-width: 769px){
+@media (min-width: 960px){  /*(min-width: 769px)*/
   .company{
     height: 120px;
   }
@@ -1073,7 +1073,7 @@ header{
     display: none;
   }
 }
-@media (min-width: 481px) and (max-width: 768px){
+@media (max-width: 959px){  /*(min-width: 481px) and (max-width: 768px)*/
   .company{
     height: 120px;
   }
@@ -1091,7 +1091,7 @@ header{
     display: none;
   }
 }
-@media (max-width: 480px){
+@media (max-width: 767px){  /*(max-width: 480px)*/
   .company{
     height: 230px;
     padding-left: 60px;
@@ -1115,7 +1115,7 @@ header{
 
 }
 /**********************/
-@media (max-width: 320px){
+@media (max-width: 479px){  /*(max-width: 320px)*/
   .v768{
     display: none;
   }
@@ -1143,13 +1143,13 @@ header{
 
 
   /*Pre footer*/
-@media (max-width: 320px){
+@media (max-width: 479px){  /*(max-width: 320px)*/
   .pre-footer{
     display: none;
   }
 }
 
-@media (min-width: 769px){
+@media (min-width: 960px){  /*(min-width: 769px)*/
   .pre-footer{
     height: 396px;
     background-color: #ececec;
@@ -1193,7 +1193,7 @@ header{
    display: none;
  }
 }
-@media (min-width: 481px) and (max-width:768px){
+@media (max-width:959px){  /*min-width: 481px) and (max-width:768px)*/
   .pre-footer{
     height: 396px;
     background-color: #ececec;
@@ -1226,7 +1226,7 @@ header{
     display: none;
   }
 }
-@media (min-width: 321px) and (max-width: 480px){
+@media (max-width: 767px){  /*(min-width: 321px) and (max-width: 480px)*/
   .pre-footer{
     height:  auto;
     background-color: #ececec;
@@ -1284,7 +1284,7 @@ header{
   /* End Pre footer*/
   /*footer*/
 
-@media (min-width: 769px){
+@media (min-width: 960px){  /*(min-width: 769px)*/
   .footer-bg{
     background-image: url(../img/footer-bg.jpg);
     height: 119px;
@@ -1312,7 +1312,7 @@ header{
   /*после подстройки   конец*/
 
 }
-@media (min-width: 481px) and (max-width:768px){
+@media (max-width:959px){  /*(min-width: 481px) and (max-width:768px)*/
   .footer-menu .menu-list a{
     font-size: 20px;
     padding-right: 3px;
@@ -1341,7 +1341,7 @@ header{
   /*после подстройки   конец*/
 }
 
-@media (min-width: 321px) and (max-width: 480px){
+@media (max-width: 767px){  /*(min-width: 321px) and (max-width: 480px)*/
   .footer-menu .menu-list a{
     font-size: 20px;
   }
@@ -1375,7 +1375,7 @@ header{
 .footer-menu a{
   font-size: 20px;
 }
-@media (max-width: 320px){
+@media (max-width: 479px){    /*(max-width: 320px)*/
   .footer-menu{
     display: none;
   }
