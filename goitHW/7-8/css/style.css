@@ -21,28 +21,29 @@ header{
     /*width: auto;*/
     height: 100%;
     background-image: url(../img/header-bg.jpg);
+    background-position: center;
     /*background-repeat: no-repeat;*/
     box-sizing: border-box;
-    overflow: hidden;
+    /*overflow: hidden;    mentor sey   */
   }
 @media only screen and (min-width: 960px){  /*min-width: 769px*/
   .container-logo-menu{
-    -width: 100%;    /*960px*/
+    width: 960px;    /*960px*/
     margin: 0 auto;
     padding-top: 50px;
-    -outline: 1px solid #000;
-    padding-left: 21%;
+    /*-outline: 1px solid #000;*/
+    /*padding-left: 21%;*/
 
   }
   .site-logo{
     float: left;
 
-    margin-right: 13.5%;
+    margin-right: 18%;  /*13.5%*/
   }
   .menu-item{
       display: inline-block;
-      /*-margin-left: 9.5%; /*120px*/*/
-      -outline: 1px solid black;
+      /*-margin-left: 9.5%; /*120px*/
+      /*-outline: 1px solid black;*/
       white-space: nowrap;
     }
   .menu-list:first-child{
@@ -722,27 +723,29 @@ header{
     height: 342px;
 }
   .blue-block-all{
-    width: 940px;  /*960px*/
-    margin: 0 auto;
-    /*outline: 1px solid black;*/
+    max-width: 910px;  /*960px*/
+    /*margin: 0 auto;*/
+    outline: 1px solid black;
     box-sizing: border-box;
 
-    padding-left: 52px;
-
+    position: relative;
+    left: 50%;
+    margin-left: -415px;
+    /*padding-left: 52px;*/
     /*font-size: 0;   */
 }
   .blue-container{
-    width: 220px;  /*220px*/
+    max-width: 220px;  /*220px*/
     display: inline-block;
     /*-margin-left: 75px;  /*margin-left: 72px;*/  /*62px; */
     margin-right: 115px;  /*margin-right: 44px;*/  /*54px*/
     position: relative;
-    /*outline: 1px solid black;*/
-    padding: 0;
+    outline: 1px solid black;
+    /*padding: 0;*/
 }
 #right_marg-0{
   margin-right: 0;
-  margin-left: -8px;
+  /*margin-left: -8px;*/
 }
   .blue-container-title{
   font-size: 30px;
