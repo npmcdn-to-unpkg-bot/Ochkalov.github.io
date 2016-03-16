@@ -293,6 +293,7 @@ header{
     color: white;
 
 }
+/**********************************/
 /***************************/
 @media (max-width: 479px){  /*max-width: 320px*/
   .header-slider .header-slider-polosa{
@@ -310,6 +311,7 @@ header{
     height: 245px;
   }
 }
+/*******************/
 @media (min-width: 768px) and (max-width: 959px){  /* (min-width: 481px) and      max-width: 768px*/
   .header-slider-polosa{
     background-color: rgba(0, 0, 0, 0.2);
@@ -333,15 +335,16 @@ header{
     line-height: 30px;
   }
 }
+/**********************************/
 @media (min-width: 960px){  /*(min-width: 769px)*/
   .header-slider-polosa{
       background-color: rgba(0, 0, 0, 0.2);
-      margin-top: 175px;
+      margin-top: 180px;
       margin-bottom: 170px;
       height: 400px;
     }
   .slider-title{
-    padding-top: 19%;
+    padding-top: 90px;  /*19%*/
     font-size: 60px;
     line-height: 36px;
   }
@@ -372,6 +375,7 @@ header{
     display: block;
     color: white;  /*#787878*/
   }
+/***********************************************/
 @media (min-width: 960px){    /*min-width: 769px*/
   .slider-polosa-alltext{
     width: 496px;
@@ -384,8 +388,8 @@ header{
     height: 415px;
     width: 280px;
     position: absolute;
-    right: 6.8%;  /*65px    6%    */
-    top: -21px;
+    right: 65px;  /* 6.8%   65px    6%    */
+    top: -23px;  /*-21px*/
     display: block;
     text-align: right;
   }
@@ -502,7 +506,7 @@ header{
 @media (min-width: 960px){        /*min-width: 769px*/
   .slider-block{
     margin: 0 auto;
-    width: 960px;    /*960px*/
+    max-width: 960px;    /*960px*/
     position: relative;
   /*  -border: 2px solid black; */
   }
@@ -629,7 +633,7 @@ header{
 
 
   /*Blue block*/
-
+/*************************************/
   @media only screen and (min-width: 768px) and (max-width:959px) {  /*(min-width: 481px) and    max-width:768px*/
     .blue-block{
       background-image: url(../img/blue-pole.png);
@@ -647,20 +651,18 @@ header{
       margin-left: 84px;
       margin-right: 12px;
       position: relative;
-
-
     }
     .blue-container-title{
       font-size: 24px;
       color: white;
-      margin-top: 80px;
+      margin-top: 78px;
     }
     #right_marg-0{
       margin-left: 100px;
       margin-right: 0;
     }
     .blue-container .more{
-      margin-top: 8px;
+      margin-top: 10px;
     }
     .icon1:before{
       top: 80px;
@@ -702,6 +704,7 @@ header{
   }
   .more{
     margin-top: 18px;
+    margin-right: -8px;
   }
   .icon1:before{
     top: 2px;
@@ -825,7 +828,7 @@ header{
   font-size: 30px;
   color: white;
   margin-top: 77px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;  /*10px*/
   }
   .more{
     margin-top: 18px;
@@ -913,8 +916,8 @@ header{
 }
 .avtor-container{
   width: 360px;
-  margin-left: 30px;  /*23px*/
-  margin-top: 130px;
+  margin-left: 32px;  /*23px*/
+  margin-top: 128px;
   padding-bottom: 40px;
   box-shadow: 0 5px 5px #efefef;
 }
@@ -983,7 +986,7 @@ header{
     display: block;
     padding: 0;
     margin-top: 17px;
-    margin-right: -19px;
+    margin-right: -24px;  /*19*/
   }
 }
 @media (min-width: 480px) and (max-width: 767px){ /*(min-width: 321px) and (max-width: 480px)*/
@@ -1091,7 +1094,7 @@ header{
 .avtor-title{
   /*font-weight: bold;*/
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 .title-color{
   color: #edbfff;
@@ -1298,7 +1301,7 @@ header{
     display: block;
 }
  .pre-footer-block-all{
-   width: 960px;
+   max-width: 960px;
    margin: 0 auto;
  }
  .pre-footer-container{
@@ -1435,16 +1438,16 @@ header{
     height: 119px;
   }
  .footer-conteiner{
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 16px;
 /*  -border: 1px solid black;  */
   }
   .footer-conteiner nav{
     display: inline-block;
   }
   .copyrait{
-    padding-top: 35px;
+    padding-top: 37px;
     float: right;
     margin-right: 20px;
   }
