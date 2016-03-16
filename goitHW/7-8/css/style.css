@@ -28,23 +28,24 @@ header{
   }
 @media only screen and (min-width: 960px){  /*min-width: 769px*/
   .container-logo-menu{
-    width: 960px;    /*960px*/
+    max-width: 960px;    /*960px*/
     margin: 0 auto;
     padding-top: 50px;
-    /*-outline: 1px solid #000;*/
+    font-size: 0;
+    max-height: 50px;
+    /*outline: 1px solid #000;*/
     /*padding-left: 21%;*/
 
   }
   .site-logo{
     float: left;
-
-    margin-right: 18%;  /*13.5%*/
+    margin-right: 175px;  /*13.5%    18%*/
   }
   .menu-item{
       display: inline-block;
       /*-margin-left: 9.5%; /*120px*/
       /*-outline: 1px solid black;*/
-      white-space: nowrap;
+      /*white-space: nowrap;*/
     }
   .menu-list:first-child{
     padding-left: 0;
@@ -248,7 +249,7 @@ header{
   .menu-item480 .menu-list:hover ul{
     display: block;
   }
-    
+
   .menu-item480 ul .menu-list:hover{
     background-color: rgba(38, 52, 62, 1);
   /*  -border-radius: 15px;  */
