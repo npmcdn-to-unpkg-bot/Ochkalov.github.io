@@ -1,15 +1,16 @@
 /*****************/
 .forie8-header{
     background-image: url(../img/header-bg.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     height: 845px;
   }
 
 .container-logo-menu{
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 50px;
-  -outline: 1px solid #000;
+  /*outline: 1px solid #000;*/
 }
 .site-logo{
   float: left;
@@ -109,7 +110,7 @@
   height: 342px;
 }
 .blue-block-all{
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   -outline: 1px solid black;
   -font-size: 0;
@@ -213,14 +214,14 @@ margin-left: 86px;
   display: block;
 }
 .pre-footer-block-all{
- width: 960px;
+ max-width: 960px;
  margin: 0 auto;
 }
 .pre-footer-container{
  width: 280px;
  margin-left: 0;
  margin-right: 57px;
- -border: 1px solid #000;
+ /*border: 1px solid #000;*/
 }
 #pre-foo-right_marg-0{
  margin-right: 0;
@@ -258,10 +259,10 @@ font-size: 48px;
   height: 119px;
 }
 .footer-conteiner{
-width: 960px;
+max-width: 960px;
 margin: 0 auto;
 padding-top: 18px;
--border: 1px solid black;
+/*border: 1px solid black;*/
 }
 .footer-conteiner nav{
   display: inline-block;
