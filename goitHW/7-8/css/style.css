@@ -58,7 +58,7 @@ header{
     padding: 24px 0 0 52px;   /*padding: 24px 0 0 52px;*/
   }
   .menu-list a{
-    text-shadow: 0 0 3px grey; 
+    text-shadow: 0 0 3px grey;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px){  /*(min-width: 481px) and (max-width: 768px)*/
@@ -465,7 +465,7 @@ header{
   .slider-polosa-alltext{
       width: 200px;
       margin: 0 auto;
-      -margin-left: 65px;
+      /*margin-left: 65px;*/
       position: relative;
       line-height: 20px;
     }
@@ -1310,7 +1310,7 @@ header{
    width: 280px;
    margin-left: 0;
    margin-right: 57px;
-   -border: 1px solid #000;
+   /*border: 1px solid #000;*/
  }
  #pre-foo-right_marg-0{
    margin-right: 0;
