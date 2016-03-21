@@ -651,6 +651,7 @@ header{
     .blue-container{
       width: 150px;
       display: inline-block;
+      vertical-align: top;
       margin-left: 84px;
       margin-right: 12px;
       position: relative;
@@ -812,6 +813,7 @@ header{
     margin-right: 57px;  /*margin-right: 44px;*/  /*54px*/  /*115px*/
     position: relative;
     display: inline-block;
+    vertical-align: top;
 
     /*outline: 1px solid black;*/
     /*padding: 0;*/
@@ -895,6 +897,7 @@ header{
 /*  -margin-top: 10px;*/
   font-weight: lighter;
   font-family: "Open Sans";
+  vertical-align: top;
 }
 .more{
   font-size: 18px;
@@ -935,7 +938,7 @@ header{
   margin-left: 89px; /*86px*/
 }
 .avtor-text__otstup{
-  padding-bottom: 2px;   /*5*/
+  padding-bottom: 8px;   /*2px     5*/
 }
   .avtor-title{
     font-size: 30px;
@@ -972,7 +975,7 @@ header{
   }
   .avtor-text__otstup{
     margin-left: 65px;
-    padding-bottom: 4px;   /*5*/
+    padding-bottom: 10px;   /*4px   5*/
   }
   .avtor-title{
     font-size: 24px;
@@ -1020,7 +1023,7 @@ header{
   }
   .avtor-text__otstup{
     margin-left: 65px;
-    padding-bottom: 5px;   /*5*/
+    padding-bottom: 11px;   /*5*/
   }
   .w768{
     display: none;
@@ -1119,6 +1122,8 @@ header{
 }
 .avtor-text__otstup{
   margin-left: 65px;
+  max-height: 18px;
+  overflow: hidden;
   }
 .avtor-container__img:before{
   content: "";
@@ -1314,14 +1319,15 @@ header{
    margin: 0 auto;
  }
  .pre-footer-container{
-   width: 280px;
+   width: 275px; /*280px*/
    margin-left: 0;
-   margin-right: 57px;
+   margin-right: 60px;  /*57px*/
    /*border: 1px solid #000;*/
  }
  #pre-foo-right_marg-0{
+   max-width: 265px;
    margin-right: 0;
-   margin-left: 2px;
+   margin-left: 5px;  /*2px*/
  }
  .v960fs{
   font-size: 48px;
