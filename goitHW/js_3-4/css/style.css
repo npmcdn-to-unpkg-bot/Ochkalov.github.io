@@ -1,0 +1,13 @@
+label{
+    font-weight: 400;
+}
+input[type=checkbox]{
+    margin-right: 10px;    
+}
+.my-btn{
+    display: block;
+    text-align: center;
+}
+.col-md-4{
+    float: none;
+}
