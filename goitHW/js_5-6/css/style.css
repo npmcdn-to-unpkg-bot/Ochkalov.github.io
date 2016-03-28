@@ -1,0 +1,18 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.time{
+    font-size: 280px;
+}
+.time-ms{
+    font-size: 50px;
+    text-align: right;
+}
+.start{
+    font-size: 80px;
+}
+.clear{
+    font-size: 80px;
+    float: right;
+}
