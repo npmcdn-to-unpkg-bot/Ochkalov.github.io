@@ -12,12 +12,13 @@ function tick() {
 //     console.log('msDisplay', msDisplay);
     
     // turn seconds into hh:mm:ss
-    var miSec = setInterval(0);
+    var miSec = setTimeout(0);
     var ms = miSec;
-    var sec = Math.round(miSec / 1000);
-    var min = Math.round(sec / 60);
+    var sec = Math.floor(miSec / 1000);
+  //  sec = sec.toFixed();
+    var min = Math.floor(sec / 60);
  //    console.log('secondsRemaining', secondsRemaining);
-    var hh  = Math.round(min * 60);
+    var hh  = Math.floor(min / 60);
  //   console.log('sec', sec);
     
   //  miSec++;
@@ -34,13 +35,20 @@ function tick() {
         hh = "0" + hh;
     }
     
-    // concatenate with colon
+    if (miSec >= 1000){
+        ms = 0 * miSec;
+        ;
+    }
+    
     var message = hh+ ":" + min + ":" + sec;
     var messageMs = ms;
     // now change the display
     timeDisplay.innerHTML = message;
     msDisplay.innerHTML = messageMs;
         
+    
+    
+    
     // subtract from seconds remaining
   //  secondsRemaining++;
 }
@@ -54,6 +62,6 @@ function startCountUp() {
     
 //    console.log('secondsRemaining', secondsRemaining);
     // every second, call the "tick" function
-    intervalHandle = setInterval(tick, 1000);
+    intervalHandle = setInterval(tick,1);
    // intervalHandle = setTimeout(tick, 1000);
 }
