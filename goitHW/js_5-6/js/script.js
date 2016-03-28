@@ -13,12 +13,15 @@ function tick() {
     
     // turn seconds into hh:mm:ss
     var miSec = setTimeout(0);
-    var ms = miSec;
-    var sec = Math.floor(miSec / 1000);
-  //  sec = sec.toFixed();
-    var min = Math.floor(sec / 60);
+   // var ms = miSec;
+    var secFull = Math.floor(miSec / 1000);
+    var ms = Math.floor(miSec) - (secFull * 60);
+    var minFull = Math.floor((secFull / 60));
+    var sec = secFull - (minFull * 60);
+  //  var min = Math.floor(sec / 60);
+    var hh  = Math.floor(minFull / 60);
+    var min = minFull - (hh * 60);
  //    console.log('secondsRemaining', secondsRemaining);
-    var hh  = Math.floor(min / 60);
  //   console.log('sec', sec);
     
   //  miSec++;
@@ -35,10 +38,10 @@ function tick() {
         hh = "0" + hh;
     }
     
-    if (miSec >= 1000){
+    // обнуление
+    /*if (miSec >= 1000){
         ms = 0 + miSec;
-        
-    }
+    }*/
     
     var message = hh+ ":" + min + ":" + sec;
     var messageMs = ms;
