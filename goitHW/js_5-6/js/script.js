@@ -15,7 +15,7 @@ function tick() {
     var miSec = setTimeout(0);
    // var ms = miSec;
     var secFull = Math.floor(miSec / 1000);
-    var ms = Math.floor(miSec) - (secFull * 60);
+    var ms = Math.floor(miSec) - (secFull * 1000);
     var minFull = Math.floor((secFull / 60));
     var sec = secFull - (minFull * 60);
   //  var min = Math.floor(sec / 60);
