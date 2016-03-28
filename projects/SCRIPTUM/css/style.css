@@ -1,0 +1,28 @@
+body{
+    background-color: #f3f3f3;
+}
+.wrapper{
+    max-width: 1850px;
+    margin: 35px auto;
+}
+
+header{
+    background-image: url(../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1010px;
+}
+.logo{
+    float: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.header-menu{
+    float: right;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+.site-name{
+    text-align: center;
+    padding-top: 420px;
+}
