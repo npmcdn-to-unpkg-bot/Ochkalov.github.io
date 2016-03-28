@@ -36,8 +36,8 @@ function tick() {
     }
     
     if (miSec >= 1000){
-        ms = 0 * miSec;
-        ;
+        ms = 0 + miSec;
+        
     }
     
     var message = hh+ ":" + min + ":" + sec;
