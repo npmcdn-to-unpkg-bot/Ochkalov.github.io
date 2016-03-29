@@ -3,9 +3,9 @@ var intervalHandle;
 var btnPouse1;
 var miSec;
 // запуск по клику
+document.querySelector('.clear').addEventListener('click',resetCount, false);
 var startTimer = document.querySelector('.start').addEventListener('click',startCountUp, false);
 
-document.querySelector('.clear').addEventListener('click',resetCount, false);
 // console.log('start',document.querySelector('.start'));
 
 
@@ -23,13 +23,12 @@ document.querySelector('.clear').addEventListener('click',resetCount, false);
 } , false);*/
 
 function resetCount(){
-    clearInterval(intervalHandle);
-   // clearTimeout(miSec);
     
+    console.log('resetCount-----');
 }
 
 function btnPouse(){
-     var textPouse = this.textContent = 'Pouse';
+    var textPouse = this.textContent = 'Pouse';
     this.className = 'btn pouse';
 }
 
@@ -37,8 +36,7 @@ function btnPouse(){
 function Pouse(){
     clearInterval(intervalHandle);
 //    document.querySelector('.start').removeEventListener('click',startCountUp);
-    
-  //  console.log('Pouse-btn----');
+      console.log('Fanction Pouse----');
 }
 
 function eventPouse(){
@@ -81,12 +79,7 @@ function tick() {
     if (hh < 10) {
         hh = "0" + hh;
     }
-    
-    // обнуление
-    /*if (miSec >= 1000){
-        ms = 0 + miSec;
-    }*/
-    
+      
     var message = hh+ ":" + min + ":" + sec;
     var messageMs = ms;
     // now change the display
@@ -101,18 +94,20 @@ function startCountUp() {
     intervalHandle = setInterval(tick,1);
      btnPouse1 = document.querySelector('.start');
     
-        console.log('this.className PRE =', this.className);
+     //   console.log('this.className PRE =', this.className);
     
     if (this.className === 'btn start') {
         var textPouse = this.textContent = 'Pouse';
         var btnStartPouse = btnPouse1.className = 'btn pouse';
-        console.log('btnPouse1.className POST =', btnPouse1.className);
+      //  console.log('btnPouse1.className POST =', btnPouse1.className);
+        console.log('Work Start----');
         eventPouse();
         return btnPouse1.className;
     } else {
      //   console.log('this.className 222 PRE =', this.className);
         this.className = 'btn start';
         textPouse = this.textContent = 'Start';
+        console.log('Work Pause----');
     } 
  //  e.preventDefault();
  //  e.stopImmediatePropagation();
