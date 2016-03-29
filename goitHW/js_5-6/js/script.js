@@ -1,24 +1,51 @@
 var secondsRemaining;
 var intervalHandle;
-
-
+var btnPouse1;
+var miSec;
 // запуск по клику
-document.querySelector('.start').addEventListener('click',startCountUp, false);
-// меняю кнопку на Пауза и смена класса на пауза -удаляю класс старт
-document.querySelector('.start').addEventListener('click', function(){
-    var textPouse = this.textContent = 'Pouse';
-    this.className = 'btn pouse';
-}, false);
-// пойск класса пауза и запуск функции остановки
-document.querySelector('.pouse').addEventListener('click',function() {
-    clearInterval(intervalHandle);
-} , false);
+var startTimer = document.querySelector('.start').addEventListener('click',startCountUp, false);
 
+document.querySelector('.clear').addEventListener('click',resetCount, false);
+// console.log('start',document.querySelector('.start'));
+
+
+
+// меняю кнопку на Пауза и смена класса на пауза -удаляю класс старт
+//document.querySelector('.start').addEventListener('click',btnPouse, false);
+// пойск класса пауза и запуск функции остановки
+
+//document.querySelector('.pouse').addEventListener('click',Pouse, false);
+//btnPouse1.className.addEventListener('click',Pouse, false);
+//console.log('btnPouse1.className VER', btnPouse1.className);
 // если паузу прикрутить к кнопке Очистка то все ОК
 /*document.querySelector('.clear').addEventListener('click',function() {
     clearInterval(intervalHandle);
 } , false);*/
 
+function resetCount(){
+    clearInterval(intervalHandle);
+   // clearTimeout(miSec);
+    
+}
+
+function btnPouse(){
+     var textPouse = this.textContent = 'Pouse';
+    this.className = 'btn pouse';
+}
+
+
+function Pouse(){
+    clearInterval(intervalHandle);
+//    document.querySelector('.start').removeEventListener('click',startCountUp);
+    
+  //  console.log('Pouse-btn----');
+}
+
+function eventPouse(){
+    document.querySelector('.pouse').addEventListener('click',Pouse, false);
+    
+   // console.log('Event222=');
+}
 
 function tick() {
     // grab the h1
@@ -66,14 +93,32 @@ function tick() {
     timeDisplay.innerHTML = message;
     msDisplay.innerHTML = messageMs;
         
-    
-    
-    
     // subtract from seconds remaining
   //  secondsRemaining++;
 }
 
 function startCountUp() {
+    intervalHandle = setInterval(tick,1);
+     btnPouse1 = document.querySelector('.start');
+    
+        console.log('this.className PRE =', this.className);
+    
+    if (this.className === 'btn start') {
+        var textPouse = this.textContent = 'Pouse';
+        var btnStartPouse = btnPouse1.className = 'btn pouse';
+        console.log('btnPouse1.className POST =', btnPouse1.className);
+        eventPouse();
+        return btnPouse1.className;
+    } else {
+     //   console.log('this.className 222 PRE =', this.className);
+        this.className = 'btn start';
+        textPouse = this.textContent = 'Start';
+    } 
+ //  e.preventDefault();
+ //  e.stopImmediatePropagation();
+}
+    
+   
     // get contents of the "minutes" text box
     // var miSec = 0;
     
@@ -82,6 +127,5 @@ function startCountUp() {
     
 //    console.log('secondsRemaining', secondsRemaining);
     // every second, call the "tick" function
-    intervalHandle = setInterval(tick,1);
-   // intervalHandle = setTimeout(tick, 1000);
-}
+    
+       // intervalHandle = setTimeout(tick, 1000);
