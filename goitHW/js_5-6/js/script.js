@@ -2,15 +2,22 @@ var secondsRemaining;
 var intervalHandle;
 
 
-
+// запуск по клику
 document.querySelector('.start').addEventListener('click',startCountUp, false);
+// меняю кнопку на Пауза и смена класса на пауза -удаляю класс старт
 document.querySelector('.start').addEventListener('click', function(){
     var textPouse = this.textContent = 'Pouse';
     this.className = 'btn pouse';
 }, false);
+// пойск класса пауза и запуск функции остановки
 document.querySelector('.pouse').addEventListener('click',function() {
     clearInterval(intervalHandle);
 } , false);
+
+// если паузу прикрутить к кнопке Очистка то все ОК
+/*document.querySelector('.clear').addEventListener('click',function() {
+    clearInterval(intervalHandle);
+} , false);*/
 
 
 function tick() {
