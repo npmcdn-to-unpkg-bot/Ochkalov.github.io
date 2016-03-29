@@ -1,7 +1,17 @@
 var secondsRemaining;
 var intervalHandle;
 
-startCountUp()
+
+
+document.querySelector('.start').addEventListener('click',startCountUp, false);
+document.querySelector('.start').addEventListener('click', function(){
+    var textPouse = this.textContent = 'Pouse';
+    this.className = 'btn pouse';
+}, false);
+document.querySelector('.pouse').addEventListener('click',function() {
+    clearInterval(intervalHandle);
+} , false);
+
 
 function tick() {
     // grab the h1
