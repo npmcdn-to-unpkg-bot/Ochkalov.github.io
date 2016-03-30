@@ -33,7 +33,7 @@ function startTIME() {
      cdateObj = new Date();
                 
     t = ( cdateObj.getTime() -  dateObj.getTime() ) -(s*1000); 
-    console.log('startTIME==',cdateObj.getTime() -  dateObj.getTime());
+//    console.log('startTIME==',cdateObj.getTime() -  dateObj.getTime());
     if (t>999) { s++; } 
 	if (s>=(m*base)) { 
 		ts=0; 
