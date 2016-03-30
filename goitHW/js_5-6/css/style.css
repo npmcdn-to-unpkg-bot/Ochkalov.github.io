@@ -1,9 +1,12 @@
 h1{
     font-size: 50px;
     text-align: center;
+    font-weight: 900;
 }
 .time{
     font-size: 280px;
+    text-shadow: 1px 1px 2px blue, 0 0 1em black;
+    
 }
 .time-ms{
     font-size: 50px;
@@ -12,8 +15,11 @@ h1{
 .btn,
 .start{
     font-size: 80px;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px blue, 0 0 1em green;
 }
 .clear{
     font-size: 80px;
     float: right;
+    text-shadow: 1px 1px 2px blue, 0 0 1em red;
 }
