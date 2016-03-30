@@ -16,7 +16,9 @@ var startTimer = document.querySelector('.start').addEventListener('click',pause
 //функция для очистки поля
 function clearСlock() { 
 	clearTimeout(clocktimer); 
+   
 	h=1;m=1;tm=1;s=0;ts=0;ms=0; 
+    timePause = 0;
 	init=0;show=true; 
 	readout1='00:00:00'; 
     readout2='0'; 
@@ -29,9 +31,9 @@ function startTIME() {
  //   console.log('show=startTIME==',show)
 
      cdateObj = new Date();
-   
-    t = ( cdateObj.getTime() -  dateObj.getTime() ) -(s*1000) - timePause; 
-  
+                
+    t = ( cdateObj.getTime() -  dateObj.getTime() ) -(s*1000); 
+    console.log('startTIME==',cdateObj.getTime() -  dateObj.getTime());
     if (t>999) { s++; } 
 	if (s>=(m*base)) { 
 		ts=0; 
@@ -93,16 +95,20 @@ function pause() {
         if(show==true) { 
         show=false; 
       endDate = new Date();
-      clearTimeout(clocktimer);
+      dateObj = endDate;
+  //    clearTimeout(clocktimer);
     //  console.log('ENDdate===',endDate);
     //   console.log('===='); 
  	} else { 
         show=true;
-       timePause = endDate.getTime() - cdateObj.getTime();
-        console.log('endDate.getTime()==',endDate.getTime());
-        console.log('cdateObj.getTime()==',cdateObj.getTime());
+        dateObj = endDate;
+        
+        // время паузы
+       timePause = cdateObj.getTime() - endDate.getTime(); 
+    //    console.log('endDate.getTime()==',endDate.getTime());
+    //    console.log('cdateObj.getTime()==',cdateObj.getTime());
         console.log('timePause==',timePause);
-         startTIME();
+     //    startTIME();
         // для запуска после паузы
        // dateObj = timePause - endDate;
     } 
