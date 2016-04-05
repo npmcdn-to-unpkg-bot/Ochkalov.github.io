@@ -1,0 +1,20 @@
+.wrapper{
+    width: 600px;
+    margin: 50px auto;
+}
+
+label {
+    display: inline-block; 
+    width: 5em;
+  }
+  fieldset div {
+    margin-bottom: 2em;
+    margin-top: 15px;
+  }
+
+em{
+    display: none;
+    padding: 5px 10px;
+    box-shadow: 0 0 4px gray;
+    border-radius: 10px;
+}
