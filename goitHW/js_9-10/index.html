@@ -7,14 +7,30 @@
     <title>Js 9-10</title>
     <!-- Latest compiled and minified CSS -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="css/cusel.css"/>
+    <link rel="stylesheet" type="" href="css/jquery.selectBox.css">
     <link rel="stylesheet" href="css/style.css">  
 
-    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-    <script src="js/script.js" type="text/javascript"></script>
+     <script src="js/script.js" type="text/javascript"></script>
+     <!--SELECT-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cusel.js"></script>
+    <script type="text/javascript" src="js/jScrollPane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        
+    <script src="js/script-select.js"> </script>
+    
+    <!--Insert after jQuery-->
+        <!--<script src='js/jquery.customSelect.js'></script>-->
+        <!--<script src="js/jquery.selectBox.js">    </script>-->
+   
+    
 </head>
 <body>
-    <div class="container">
+    <div class="wrapper">
+        <div class="container">
            
                 <div class="jcarousel">
                     <ul>
@@ -27,8 +43,55 @@
                     <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
                     <a href="#" class="jcarousel-control-next">&rsaquo;</a>
                     <p class="jcarousel-pagination"></p>
- 
-    </div>
+            </div>
      
+     <form action="#">
+		<div class="lineForm">
+            <label>Селект со скролом и длинным значением</label>
+            <select class="sel80" id="country" name="country" tabindex="2">
+            <option value="2">Украина</option>
+            <option value="/чехия.cz/">Чехия</option>
+            <option value="4">Словакия</option>
+            <option value="5">Румыния</option>
+            <option value="6">Болгария</option>
+            <option value="7">Польша</option>
+            <option value="8">Германия</option>
+            <option value="9">Франция</option>
+            <option value="10">Англия</option>
+            <option value="11">Испания</option>
+            <option selected="selected" value="1000">Выберите страну...</option>
+            </select>
+        </div>
+        </form>
+     
+     
+     
+    <select class="selectBox" id="standard-dropdown">
+    <option value="">choose preset...</option>
+    <option value="one">two</option>
+    <option value="two">something</option>
+    <option value="three">4</option>
+    <option value="four">5</option>
+    </select>
+     <!--CUSel-->
+    <!--<div class="cusel" id="cuselFrame-idSelect">
+	<div class="cuselFrameRight"></div>
+	<div class="cuselText">текст option 1</div>
+	<div class="cusel-scroll-wrap">
+		<div class="cusel-scroll-pane" id="cusel-scroll-idSelect">
+		<span class="cuselActive" value="значение option 1">текст option 1</span>
+		<span class="" value="значение option 2">текст option 2</span>
+		<span class="" value="значение option 3">текст option 3</span>
+		</div>
+	</div>
+	<input id="idSelect" name="nameSelect" value="значение option 1" type="hidden"/>
+</div>-->
+<!--CUSel-->
+
+ 
+     
+</div>
+
+
 </body>
 </html>
