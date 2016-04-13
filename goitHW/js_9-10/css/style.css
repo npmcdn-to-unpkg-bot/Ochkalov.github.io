@@ -210,3 +210,88 @@ have a fixed width and height (but it's not required).
         float: left;
         margin-right: 10px;
     }
+
+/*****************************/
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox-sprite.png);
+overflow: hidden;
+}
+.niceCheck input {
+display: none;
+}
+		
+.checkbox-lebel{
+    display: block;
+    float: none;
+    margin-right: 0;
+    
+}   
+
+
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+	margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+.niceCheckDisabled {
+	background-image: url(../img/checkbox-disabled.png);
+}
+/***********************/
+
+
+
+input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.checkbox-lebel-css {
+	cursor: pointer;
+    float: none;
+    display: block;
+}
+.checkbox-lebel-css:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+input[type=checkbox]:checked + .checkbox-lebel-css:after {
+    background: url(../img/checkbox-2.png);
+    background-position: 0 -17px;
+}
+.checkbox-lebel-css:hover:after {
+    background: url(../img/checkbox-2.png);
+    background-position: 0 -34px;
+}
+input[type=checkbox]:checked + .checkbox-lebel-css:hover:after {
+    background: url(../img/checkbox-2.png);
+background-position: 0 -51px;
+}
+
+
+label {
+	cursor: pointer;
+}
+
+input[type=checkbox]:checked + label:after {
+background: url(../img/checkbox-2.png);
+background-position: 0 -17px;
+}
+label:hover:after {
+    background: url(../img/checkbox-2.png);
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+    background: url(../img/checkbox-2.png);
+background-position: 0 -51px;
+}
+
