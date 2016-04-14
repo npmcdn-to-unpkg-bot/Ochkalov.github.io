@@ -8,3 +8,22 @@ $(document).ready(function() {
             }
         );
     }); 
+
+
+jQuery(document).ready(function(){
+
+jQuery(".sub-menu").mouseenter(
+  function () {
+	jQuery(this).animate({
+		backgroundColor:"#03C",
+    }, 500 );
+});
+
+jQuery(".sub-menu").mouseleave(function() {
+	jQuery(this).animate({
+		backgroundColor:"#0CF",
+    }, 500 );
+});
+
+});
+
