@@ -9,6 +9,22 @@
     width: 600px;
     height: 400px;
 }
+.new-task{
+    width: 600px;
+    background: black;
+    height: 10px;
+    margin: 20px;
+    
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+
 .jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
