@@ -49,3 +49,15 @@
 .carousel-arrow-right {
     margin-left: 25px;
 }
+
+.clearfix{
+    clear: both;
+}
+
+.img-item{
+    max-width: 600px;
+}
+.img-block{
+    text-align: center;
+
+}
