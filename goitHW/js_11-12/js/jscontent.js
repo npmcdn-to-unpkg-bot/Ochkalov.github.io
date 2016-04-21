@@ -2,7 +2,7 @@ $(function () {
     var html =  $('#temp').html();
     var article = [
         {
-        url: 'http://lorempixel.com/600/400',
+        url: 'img/6.jpg',
         title: 'Article 1',
         samtext: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda doloremque eos est, excepturi iusto maxime nesciunt porro possimus praesentium, provident quia tenetur, unde. Aut distinctio dolorem et minus numquam?'
         },
