@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>JS 3-4</title>
+</head>
+<body>
+<!--Вставка по шаблону-->
+        <script type="text/html" id="temp">
+            <div class="wrapper">
+                <% for (var i = 0; i < data.length; i++) { %>
+                <h2><%= data[i].q %></h2>
+                <ul>
+                <li><%= data[i].a1 %></li>
+                <li><%= data[i].a2 %></li>
+                <li><%= data[i].a3 %></li>
+                <li><%= data[i].a4 %></li>
+                </ul>
+                <% }; %>
+            </div>
+        </script>
+
+<!---->
+<div class="hw13">
+    *********************************
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/jslocalStotage.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/tmcontent.js"></script>
+</body>
+</html>
