@@ -11,9 +11,11 @@
 <!--Вставка по шаблону-->
         <script type="text/html" id="temp">
             <div class="container">
+               <p id="okQuestion"></p>
+               
                 <% for (var i = 0; i < data.length; i++) { %>
                 <h2><%= data[i].q %></h2>
-                <form>
+                <form class="question">
                 <ul>
                 <li class="list-unstyled">
                     <label>
@@ -49,5 +51,6 @@
     <script src="js/jslocalStotage.js"></script>
     <script src="js/tmpl.js"></script>
     <script src="js/tmcontent.js"></script>
+    <script src="js/testvalid.js"></script>
 </body>
 </html>
