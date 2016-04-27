@@ -1,4 +1,4 @@
-//"use strict";
+"use strict";
 
 var qwe = ["1. Какой формат передачи данных наиболее распостранен?",
     "2. Какой объект для работы с XML файлами втроен во все современные браузеры?",
@@ -13,11 +13,11 @@ var strAnsw = JSON.stringify(answ);
   //  console.log('strAnsw=',strAnsw);
 
 var strQweLocal = localStorage.setItem('strQweLocalKey', strQwe);
-    strQweLocalGet = localStorage.getItem('strQweLocalKey');
+var strQweLocalGet = localStorage.getItem('strQweLocalKey');
  //   console.log('strQweLocalGet=', strQweLocalGet);
 
 var strAnswLocal = localStorage.setItem('strAnswLocalKey', strAnsw);
-    strAnswLocalGet = localStorage.getItem('strAnswLocalKey');
+var strAnswLocalGet = localStorage.getItem('strAnswLocalKey');
 //    console.log('strAnswLocalGet=', strAnswLocalGet);
     
 var objQweLocalGet = JSON.parse(strQweLocalGet);
