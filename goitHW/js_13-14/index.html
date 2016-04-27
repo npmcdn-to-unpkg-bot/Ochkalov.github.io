@@ -10,25 +10,42 @@
 <body>
 <!--Вставка по шаблону-->
         <script type="text/html" id="temp">
-            <div class="wrapper">
+            <div class="container">
                 <% for (var i = 0; i < data.length; i++) { %>
                 <h2><%= data[i].q %></h2>
+                <form>
                 <ul>
-                <li><%= data[i].a1 %></li>
-                <li><%= data[i].a2 %></li>
-                <li><%= data[i].a3 %></li>
-                <li><%= data[i].a4 %></li>
+                <li class="list-unstyled">
+                    <label>
+                        <input type="radio" name="answers">
+                    <%= data[i].a1 %></li>
+                    </label>
+                <li class="list-unstyled"><label>
+                    <input type="radio" name="answers">
+                    <%= data[i].a2 %></li>
+                    </label>
+                    </li>
+                <li class="list-unstyled"><label>
+                    <input type="radio" name="answers">
+                    <%= data[i].a3 %></li>
+                    </label>
+                    </li>
+                <li class="list-unstyled"><label>
+                    <input type="radio" name="answers">
+                    <%= data[i].a4 %></li>
+                    </label>
+                    </li>
                 </ul>
+                </form>
                 <% }; %>
+                <div class=" my-btn"><button class="btn btn-default btn-lg col-md-4">Проверить мои результаты</button></div>
             </div>
         </script>
 
 <!---->
-<div class="hw13">
-    *********************************
-</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/script2.js"></script>
+<!--    <script src="js/script2.js"></script>-->
     <script src="js/jslocalStotage.js"></script>
     <script src="js/tmpl.js"></script>
     <script src="js/tmcontent.js"></script>

@@ -1,3 +1,5 @@
+//   рендеринг через JS
+
 var divWrapper = document.createElement('div');
 divWrapper.className = 'container';
 var div = document.createElement('div');
@@ -28,7 +30,7 @@ var qwe = ["1. Какой формат передачи данных наибо�
     "3. Какой объект для работы с JSON файлами втроен во все современные браузеры?"];
 
 var answ = ['JSON','XML','SQL','Такого объекта нет. Необходимо пользоваться внешними библиотеками.','XMLParser'];
-//////////////////
+//////////////////   рендеринг через JS
 for (var i = 0; i < qwe.length; i++){
     var textElemH2Q1 = document.createTextNode(qwe[i]);
     divWrapper.appendChild(div);
