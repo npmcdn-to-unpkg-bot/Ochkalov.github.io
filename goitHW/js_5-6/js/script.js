@@ -1,7 +1,7 @@
 var secondsRemaining;
 var intervalHandle;
 var btnPouse1;
-var miSec;
+var miSec,secFull,minFull,hh,sec,min,ms,timeDisplay,msDisplay;
 // запуск по клику
 document.querySelector('.clear').addEventListener('click',resetCount, false);
 var startTimer = document.querySelector('.start').addEventListener('click',startCountUp, false);
@@ -22,8 +22,15 @@ var startTimer = document.querySelector('.start').addEventListener('click',start
     clearInterval(intervalHandle);
 } , false);*/
 
+
+// Очистка поля
 function resetCount(){
-    
+    clearTimeout(intervalHandle);
+    miSec = 0;
+    sec = 0;
+    min = 0;
+    document.getElementById('time').textContent = '00:00:00';
+    document.getElementById('time-ms').textContent = '0';
     console.log('resetCount-----');
 }
 
@@ -34,8 +41,8 @@ function btnPouse(){
 
 
 function Pouse(){
-    clearInterval(intervalHandle);
-//    document.querySelector('.start').removeEventListener('click',startCountUp);
+    
+
       console.log('Fanction Pouse----');
 }
 
@@ -54,7 +61,7 @@ function tick() {
 //     console.log('msDisplay', msDisplay);
     
     // turn seconds into hh:mm:ss
-    var miSec = setTimeout(0);
+    miSec = setTimeout(0);
    // var ms = miSec;
     var secFull = Math.floor(miSec / 1000);
     var ms = Math.floor(miSec) - (secFull * 1000);
