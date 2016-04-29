@@ -77,6 +77,12 @@ $(function () {
     });
 
     $('body').append(content);
+    $('button').on('click', function (e) {
+        e.preventDefault();
+
+    });
+
+
     $( "button" ).on( "click", Score);
 
 
@@ -92,14 +98,13 @@ $(function () {
 
 
         var qwest = (parseNum(question.target.name)) -1;
-       console.log('Вопрос № ',qwest);
+       // console.log('Вопрос № ',qwest);
 
          // yourAns[question] = answer;
         answer = parseInt(question.currentTarget.value);
         yourAns[qwest] = answer;
-        console.log('Ответа № ',answer);
-
-        console.log('yourAns[]=',yourAns);
+        /*console.log('Ответа № ',answer);
+        console.log('yourAns[]=',yourAns);*/
     }
 
     function parseNum(str){
@@ -111,17 +116,17 @@ $(function () {
     function Score(){
         var answerText = "Результаты:\n";
 
-        console.log('yourAns.length',yourAns.length);
+      //  console.log('yourAns.length',yourAns.length);
 
 
 
         for( var i = 0; i < yourAns.length; ++i){
 
             var num = i+1;
-            answerText = answerText+"\n    Вопрос №"+ num +"";
+            answerText = answerText+"<br/>\n    Вопрос №"+ num +"" ;
 
             if(yourAns[i]!= test[i].correctAnswer){
-                console.log('yourAns[i]',yourAns[i]);
+                // console.log('yourAns[i]',yourAns[i]);
                 answerText = answerText+": НЕ Верно! \n";
 
                 /*answerText = answerText+"\n    Правильный ответ: " +
@@ -134,12 +139,15 @@ $(function () {
             }
         }
 
-        answerText = answerText +"\nВсего правильных ответов: "+score+"\n";
+        answerText = answerText +"<br/><br/>\n Всего правильных ответов: "+score+"\n";
 
-        alert(answerText);
+        // alert(answerText);
+    $('.textpop').html(answerText);
+
         yourAns = [];
         score = 0;
         clearForm("quiz");
+
     }
 
 
@@ -164,7 +172,6 @@ $(function () {
      }
      }
 */
-
 
 
 
