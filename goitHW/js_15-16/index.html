@@ -11,16 +11,49 @@
            <h2 class="logoH2">YooSearch</h2>
             </div>
             <div class="form-block">
-                <form class="form-all">
-                    <input type="text" name="search" placeholder="samfing" class="form-item">
-                    <input type="button" name="search" value="Search" class="form-item-button">
+                <form class="form-all" action="/search" method="get">
+                    <input type="text" name="search-text" placeholder="samfing" class="form-item">
+                    <input type="submit" name="search-btn" value="Search" class="form-item-button">
                 </form>
             </div>
-        
+        <div class="result-container">
+        <div class="result-container__data">
+            <script type="text/tmpl" id="googleTemplateData">
+                <% for(var i=0; i < results.length; i++){ %>
+                <div class="article">
+                    <div class="article__content">
+                        <h3 class="article__header"><a class="article__refer" href="<%=results[i].url%>"><%=results[i].title%></a></h3>
+                        <div class="article__container">
+                            <div class="article__url">
+                                <cite class="article__cite"><%=results[i].url%></cite>
+                            </div>
+                            <div class="article__text"><%=results[i].content%></div>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </script>
+        </div>
+        <div class="result-container__cursor">
+            <script type="text/tmpl" id="googleTemplateCursor">
+                <% for(var i=0; i < pages.length; i++){ %>
+                    <div class="page">
+                        <a class="current-<%= currentPageIndex+1 == pages[i].label  %>" href="#" onClick="getPage(<%=Number(pages[i].start)%>)">
+                            <%=pages[i].label%>
+                        </a>
+                    </div>
+                <% } %>
+                <div class="page">
+                    <a href="#" <%= currentPageIndex+1 == pages.length && pages.length < 8 ? 'hidden' : '' %> onClick="getPage(<%=(currentPageIndex+1) * 8 %>)">Следующая</a>
+                </div>
+            </script>
+        </div>
+    </div>
         
         
     </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+     <script src="js/tmpl.js"></script>
+     <script src="js/script2.js"></script>
 </body>
 </html>
