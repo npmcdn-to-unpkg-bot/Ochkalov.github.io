@@ -1,0 +1,28 @@
+.wrapper{
+    width: 800px;
+    margin: 15% auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logoH2{
+    font-size: 80px;  
+    font-weight: 900;  
+    text-align: center;
+}
+
+.form-block{
+    display: block;
+    text-align: center;
+}
+
+.form-item{
+    width: 600px;
+    height: 30px;    
+    
+}
+.form-item-button{
+    height: 35px;
+    width: 70px;
+}
+
+
