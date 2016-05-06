@@ -57,7 +57,7 @@ gulp.task('concat', function() {
 gulp.task('compress', function() {
     return gulp.src('app/js/*.js')
         .pipe(uglify())
-        .pipe(rename('script.main.min.css'))
+        .pipe(rename('script.main.min.js'))
         .pipe(gulp.dest('app/js'));
 });
 // gulp.task('scripts', function() {
