@@ -1,0 +1,9 @@
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+.item {
+  padding-left: 20px;
+  color: #510;
+  background: yellow;
+}
