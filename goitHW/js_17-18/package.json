@@ -1,0 +1,11 @@
+{
+  "name": "js-17-18",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
