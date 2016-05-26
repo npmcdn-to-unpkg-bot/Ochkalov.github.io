@@ -78,7 +78,7 @@ input[type="text"]:disabled {
     display: block;
     width: 10px;
     height: 10px;
-    background-image: url('../img/X-icon.png');
+    background-image: url('../img/x-icon.png');
     background-size: contain;
     top: 35%;
     right: 15px;
