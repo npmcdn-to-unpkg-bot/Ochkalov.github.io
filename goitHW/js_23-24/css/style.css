@@ -1,0 +1,115 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkgrey;
+    background-color: rgb(39, 134, 232);
+}
+h1{
+    color: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 45px auto;
+    text-align: center;
+}
+
+.toDo_conteyner {
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+    border: 1px solid rgb(221, 219, 32);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+}
+
+.style-4 {
+    margin-bottom: 15px;
+    width: 75%;
+    float: left;
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    width: 98%;
+    color: rgb(43,43,43);
+    font-weight: 300;
+}
+input[type="text"]:disabled {
+    background: #fff;
+}
+
+.item__list {
+    clear: both;
+}
+
+.item__block {
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.34);
+}
+.item-delete {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/X-icon.png');
+    background-size: contain;
+    top: 35%;
+    right: 15px;
+
+}
+.item-delete:hover{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.myButton {
+    background-color: #ff9595;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 6px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #0e1127;
+}
+
+.myButton:active {
+    outline: 0;
+    position: relative;
+    top: 1px;
+}
