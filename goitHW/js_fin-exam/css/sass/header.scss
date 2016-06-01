@@ -1,0 +1,68 @@
+/*=============header=============*/
+header{
+  position: relative;
+  max-width: 100%;
+  background: #9d9d9d url("../../img/headerbig.jpg")no-repeat center;
+  background-size: cover;
+  height:700px;
+}
+.top__header{
+  padding-top: 38px;
+}
+.logo{
+  color: #fefffd;
+  float: left;
+  padding-top: 6px;
+  padding-left: 5px;
+}
+.logo a{
+  color: white;
+  font:20px montserratbold, sans-serif;
+}
+.authentication {
+  float: right;
+  color: white;
+}
+.authentication .authentication__container--singup {
+  border-radius: 20px;
+  border: 2px solid rgb(255,255,255);
+}
+.authentication li{
+  display: inline-block;
+  margin-right: 5px;
+}
+.authentication li a{
+  display: block;
+  color: white;
+  font: 14px montserratbold, sans-serif;
+  padding: 10px 24px;
+}
+.header__bottom{
+  padding-top: 139px;
+  text-align: center;
+  color: white;
+}
+.header__bottom .header__bottom--title{
+  display: block;
+  width: 100%;
+  max-width: 510px;
+  margin: 0 auto;
+  font:52px montserratbold, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.header__bottom .header__bottom--subtitle{
+  font: 18px robotolight, sans-serif;
+  margin-bottom: 26px;
+}
+.header__bottom .header__bottom--button{
+  color: white;
+  font:14px montserratbold, sans-serif;
+  padding: 11px 12px;
+  background-color: #ff4e50;
+  border-radius: 20px;
+}
+
+
+
+/*-=============end_header=============*/
