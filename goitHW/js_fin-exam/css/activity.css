@@ -1,0 +1,50 @@
+.holiday-activity {
+  text-align: center; }
+
+.holiday-activity--title {
+  color: #000;
+  font: 22px/44px montserratbold, sans-serif; }
+
+.grid {
+  max-width: 100%; }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid-sizer {
+  width: 33%; }
+
+.grid-item {
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  box-sizing: border-box; }
+
+.grid__item__img__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50%;
+  border-radius: 5px;
+  z-index: 1000; }
+
+.grid__item__img__text p {
+  padding-top: 125px;
+  display: block;
+  color: white;
+  font: 22px/36px montserratbold, sens-serif; }
+
+.grid-item--width4 {
+  width: 33.33%; }
+
+.grid-item--width8 {
+  width: 66.66%; }
+
+.grid-item--height1 {
+  height: 312px; }

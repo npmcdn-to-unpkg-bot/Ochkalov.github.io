@@ -1,0 +1,41 @@
+/*=============Footer=============*/
+footer{
+  padding: 35px 0;
+  border-top: 4px solid #ff4e50;
+    .footer__title{
+      color: white;
+      float: left;
+      padding-top: 6px;
+      padding-left: 5px;
+        a{
+          color: #ff4e50;
+          font: 16px montserratbold, sans-serif;
+        }
+    }
+    .footer__company p{
+      color: #000;
+      font:16px/24px montserratbold, sans-serif;
+    }
+    .footer__company ul{
+      padding-left:5px;
+    }
+    .footer__company a{
+      color: #4d4d4d;
+      font:14px robotolight, sans-serif;
+    }
+    .footer__company p{
+      color: black;
+      font:14px/24px montserratbold, sans-serif;
+    }
+    .footer__design{
+      text-align: right;
+        p{
+          text-transform: uppercase;
+          color: #bdbdbd;
+          font: 10px montserratbold, sans-serif
+        }
+    }
+}
+
+
+/*-=============end_Footer=============*/
