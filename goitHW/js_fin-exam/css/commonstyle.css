@@ -1,0 +1,25 @@
+/*grid*/
+.container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.container .cols{
+    float: left;
+    padding: 0 14px;
+}
+.container:after,
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container .cols.col-full{
+    width: 100px;
+}
+.container .cols.col-25{
+    width: 25%;
+}
+.container .cols.col-33{
+    width: 33.333333%;
+}

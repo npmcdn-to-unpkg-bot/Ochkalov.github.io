@@ -1,0 +1,53 @@
+.person {
+  padding-top: 90px;
+  text-align: center;
+  padding-bottom: 85px; }
+  .person .person__title {
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+    font: 24px montserratbold, sans-serif; }
+
+.person__box {
+  margin: 31px 0; }
+
+.person__profile {
+  text-align: center; }
+  .person__profile .person__avatar {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    position: relative; }
+
+.person__avatar img {
+  border-radius: 50%; }
+
+.person__avatar a {
+  display: block;
+  padding-bottom: 15px; }
+
+.person__name {
+  color: #000;
+  font: 14px/36px montserratbold, sans-serif; }
+
+.person__info {
+  color: #989898;
+  font: 14px robotolight, sans-serif; }
+
+.person__status {
+  position: absolute;
+  bottom: -5px;
+  right: -12px;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%; }
+
+.person .person__more {
+  font: 14px/36px montserratbold, sans-serif;
+  text-align: center;
+  color: #ff4e50;
+  border: 3px solid #ff4e50;
+  border-radius: 20px;
+  padding: 10px 20px; }

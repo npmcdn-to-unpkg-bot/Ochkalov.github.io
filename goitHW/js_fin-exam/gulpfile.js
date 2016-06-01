@@ -20,7 +20,7 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('css', function () {
-    return gulp.src(['css/commonstyle.css', 'css/fonts.css', 'css/header.css', 'css/carousel.css',  'css/profiles.css', 'css/holidayactivity.css', 'css/search.css', 'css/footer.css', 'css/media.css'])
+    return gulp.src(['css/commonstyle.css', 'css/fonts.css', 'css/header.css', 'css/carousel.css',  'css/profiles.css', 'css/holidayactivity.css', 'css/search.css', 'css/footer.css', 'css/slider.css', 'css/media.css'])
         .pipe(cleanCSS({
             compatibility: 'ie8',
             debug: true

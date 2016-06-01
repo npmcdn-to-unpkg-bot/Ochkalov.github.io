@@ -19,12 +19,13 @@
     <script src="js/plagins/html5shiv.js"></script>
 
     <script src="js/profiles.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/activity.js"></script>
 </head>
 <body>
 
 <header>
-    <div class="container">
+    <div class="container col-full">
         <div class="top__header">
             <div class="authentication">
                 <ul class="authentication__container">
@@ -52,7 +53,7 @@
         <div class="slider">
             <h4 class="slider__title">How Urlaubsglück works?</h4>
             <!--first slider-->
-            <div class="cols">
+            <div class="cols col-33">
                 <div class="first-slider slider__box">
                     <div class="first-slider__nav"><a href="" class="first-slider__nav--prev"></a></div>
                     <div class="first-slider__nav"><a href="" class="first-slider__nav--next"></a></div>
@@ -72,7 +73,7 @@
 
 
     <!--2 slider-->
-    <div class="cols">
+    <div class="cols col-33">
         <div class="second-slider slider__box">
             <div class="second-slider__nav"><a href="" class="second-slider__nav--prev"></a></div>
             <div class="second-slider__nav"><a href="" class="second-slider__nav--next"></a></div>
@@ -91,7 +92,7 @@
         </div>
     </div>
     <!--3 slide-->
-        <div class="cols">
+        <div class="cols col-33">
             <div class="third-slider slider__box">
                 <div class="third-slider__nav"><a href="" class="third-slider__nav--prev"></a></div>
                 <div class="third-slider__nav"><a href="" class="third-slider__nav--next"></a></div>
@@ -116,12 +117,12 @@
 
 <!--Profile-->
 <aside class="person">
-    <div class="container">
+    <div class="container col-full">
         <h4 class="person__title">Meet a partner for your best holiday</h4>
-        <div class="person__box">
+        <div class="row person__box">
             <script type="text/template" id="person">
                 <% for(var i=0; i< data.length; i++){ %>
-                <div class="person__profile cols">
+                <div class="person__profile cols col-25">
                     <div class="person__avatar">
                         <a href="#"><img src="<%= data[i].avatar %>" alt=""></a>
                         <div class="person__status"><img src="<%= data[i].status %>" alt=""></div>
@@ -173,7 +174,7 @@
 
     <!--Search-->
 <div class="search">
-    <div class="container cols">
+    <div class="container cols col-full">
         <h4 class="search__title">Discover holiday activity ideas</h4>
         <p class="search__text">Hi! What are your holiday interests?</p>
         <form action="" id="target">
@@ -187,12 +188,12 @@
 
 <!--footer-->
 <footer>
-    <div class="container cols">
+    <div class="container cols col-full">
         <div class="row">
-            <div class="footer__title cols">
+            <div class="footer__title cols col-25">
                 <h4><a href="#" class="logo__link">URLAUBSGLÜCK</a></h4>
             </div>
-            <div class="footer__company cols">
+            <div class="footer__company cols col-25">
                 <p>Company</p>
                 <ul>
                     <li><a href="#">About us</a></li>
@@ -201,10 +202,10 @@
                     <li><a href="#">blog</a></li>
                 </ul>
             </div>
-            <div class="footer__partner cols">
+            <div class="footer__partner cols col-25">
                 <p>Partners</p>
             </div>
-            <div class="footer__design cols">
+            <div class="footer__design cols col-25">
                 <p>Designed by</p>
                 <img src="img/designLogo.png" alt="">
             </div>
