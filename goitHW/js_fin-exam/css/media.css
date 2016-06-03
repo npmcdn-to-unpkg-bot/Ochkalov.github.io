@@ -1,0 +1,113 @@
+@media screen and (max-width:748px) {
+    .container{
+        padding: 2px;
+    }
+    .container .cols.col-25{
+        width: 50%;
+    }
+    .sloder .cols.col-33{
+        width: 100%;
+    }
+    .slider__box{
+        margin: 5px auto;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/*///////////////////////*/
+@media screen and (min-width: 319px) and (max-width:460px){
+    .grid-item--width4{
+        width: 100%;
+    }
+    .grid-item--width8{
+        width: 100%;
+    }
+    .grid-item--height1{
+        height: 118px;
+    }
+    .grid-item img{
+        width: 100%;
+        height: 180px;
+    }
+    .grid__item__img__text p{
+        padding-top: 10%;
+    }
+    .container .cols{
+        float: none;
+        margin: 0 0 1em;
+        padding: 0 1em;
+    }
+    .container .cols.col-25,
+    .container .cols.col-33,
+    .container .cols.col-full{
+        width: 100%;
+    }
+    header{
+        height: 540px;
+    }
+    .authentication{
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    .logo{
+        margin-top: 100px;
+        text-align: center;
+        width: 100%;
+        float: none;
+    }
+    .top__header{
+        padding-top: 12px;
+    }
+    .header__bottom{
+        padding-top: 30px;
+    }
+    .header__bottom .header__bottom--title{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    .header__bottom .header__bottom--subtitle{
+        font: 18px/24px robotolight, sans-serif;
+        margin-bottom: 26px;
+    }
+    .slider{
+        margin-top: 20px;
+    }
+    .slider-title{
+        text-align: center;
+        font: 22px/24px montserratbold, sans-serif;
+    }
+    .first-slider__nav,
+    .second-slider__nav,
+    .third-slider__nav{
+        display: none;
+    }
+    .search .search__input{
+        width: 40%;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer__company ul li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .footer__design p{
+        text-align: center;
+    }
+    /*footer .footer__design img{
+        text-align: center;
+        padding-top: 10px;
+    }*/
+    .footer__design .footer__img{
+        text-align: center;
+        padding-top: 10px;
+    }
+    footer .footer__design .footer__img{
+        text-align: center;
+    }
+
+
+}
+
+
