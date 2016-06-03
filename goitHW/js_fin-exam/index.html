@@ -55,14 +55,15 @@
             <!--first slider-->
             <div class="cols col-33">
                 <div class="first-slider slider__box">
-                    <div class="first-slider__nav"><a href="" class="first-slider__nav--prev"></a></div>
-                    <div class="first-slider__nav"><a href="" class="first-slider__nav--next"></a></div>
+                    <div class="first-slider__nav"><a class="first-slider__nav--prev"></a></div>
+                    <div class="first-slider__nav"><a class="first-slider__nav--next"></a></div>
                     <div class="owl-carousel" id="first-slider">
                     <div class="slider__item slider__item--slide1">
                         <div class="slider__info slider__info--first">
                             <a href="#" class="slide__button slide__button--first">step 1</a>
-                            <h4 class="slide__title slide__title--first"></h4>Sed leo enim, condimentum</div>
+                            <h4 class="slide__title slide__title--first">Sed leo enim, condimentum</h4>
                         <p class="slide__text slide__text--first">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                    </div>
                     </div>
 
                 <div class="slider__item slider__item--slide2"></div>
@@ -75,8 +76,8 @@
     <!--2 slider-->
     <div class="cols col-33">
         <div class="second-slider slider__box">
-            <div class="second-slider__nav"><a href="" class="second-slider__nav--prev"></a></div>
-            <div class="second-slider__nav"><a href="" class="second-slider__nav--next"></a></div>
+            <div class="second-slider__nav"><a class="second-slider__nav--prev"></a></div>
+            <div class="second-slider__nav"><a class="second-slider__nav--next"></a></div>
             <div class="owl-carousel" id="second-slider">
             <div class="slider__item slider__item--slide1">
                 <div class="slider__info slider__info--second">
@@ -94,8 +95,8 @@
     <!--3 slide-->
         <div class="cols col-33">
             <div class="third-slider slider__box">
-                <div class="third-slider__nav"><a href="" class="third-slider__nav--prev"></a></div>
-                <div class="third-slider__nav"><a href="" class="third-slider__nav--next"></a></div>
+                <div class="third-slider__nav"><a class="third-slider__nav--prev"></a></div>
+                <div class="third-slider__nav"><a class="third-slider__nav--next"></a></div>
                 <div class="owl-carousel" id="third-slider">
                 <div class="slider__item slider__item--slide1">
                     <div class="slider__info slider__info--third">
@@ -154,17 +155,17 @@
     <script type="text/template" id="holiday-activity">
         <div class="container">
             <div class="grid">
-                <div class="grid-sizer"> <!--!!--> </div>
-                <% for(var i=0; i <data.images.length; i++){ %>
-
-                <div class="grid-item grid-item--width4 grid-item--height1 <%=(i  == 4 || i == 5  ? " grid-item--width8 " : " ")%>">
-                <a href="<%= data.images[i].imageurl %>" target="_blank">
-                    <img src="<%= (data.images[i].imageurl != "undefined" ? data.images[i].imageurl : "http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image") %>" alt="">
+                <div class="grid-sizer"> </div>
+                <% for(var i=0; i < data.hits.length; i++){ %>
+                <div class="grid-item grid-item--width4 grid-item--height1 <%= (i  == 4 || i == 5  ? " grid-item--width8 " : " ") %>">
+                <a href="<%= data.hits[i].webformatURL %>" target="_blank">
+                    <img src="<%= data.hits[i].webformatURL %>" alt="">
                     <div class="grid__item__img__text">
-                        <p><%= data.images[i].word %></p>
+                        <p><%= data.hits[i].tags %></p>
                     </div>
                 </a>
-            </div>
+
+                </div>
             <% }; %>
         </div>
         </div>
@@ -179,7 +180,7 @@
         <p class="search__text">Hi! What are your holiday interests?</p>
         <form action="" id="target">
             <input type="text" name="name" value="" class="search__input" placeholder="Enter your interest">
-            <button type="button" name="button" class="search__button" id="search__buttom">Search</button>
+            <button type="button" name="button" class="search__button" id="search__button">Search</button>
         </form>
     </div>
 </div>
@@ -207,7 +208,7 @@
             </div>
             <div class="footer__design cols col-25">
                 <p>Designed by</p>
-                <img src="img/designLogo.png" alt="">
+                <img class="footer__img" src="img/designLogo.png" alt="">
             </div>
         </div>
     </div>
