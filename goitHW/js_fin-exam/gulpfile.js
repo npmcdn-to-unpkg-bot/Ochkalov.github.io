@@ -4,7 +4,7 @@ var watch = require('gulp-watch');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var webserver = require('gulp-webserver');
-// var	minifyCSS = require('gulp-minify-css');
+var	minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var cleanCSS = require('gulp-clean-css');
 
@@ -30,7 +30,7 @@ gulp.task('css', function () {
             cascade: false
         }))
         .pipe(concatCss('style.css'))
-        // .pipe(minifyCSS({keepBreaks: true}))
+        .pipe(minifyCSS({keepBreaks: true}))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('css/build/'));
 });
