@@ -1,0 +1,27 @@
+.search {
+  text-align: center;
+  margin: 50px 0; }
+  .search .search__title {
+    color: #000;
+    font: 22px/44px montserratbold, sans-serif; }
+  .search .search___text {
+    color: #000;
+    font: 18px/36px robotolight, sans-serif; }
+  .search form {
+    padding: 25px 0; }
+  .search .search__input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 25%;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1); }
+  .search .search__button {
+    font: 14px robotolight, sans-serif;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff4e50;
+    border: none;
+    border-radius: 20px; }

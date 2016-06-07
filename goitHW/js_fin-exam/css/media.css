@@ -1,3 +1,9 @@
+@media screen and (min-width:750px) {
+    .header__bottom .header__bottom--button {
+        display: inline-block;
+    }
+}
+/*///////////////*/
 @media screen and (max-width:748px) {
     .container{
         padding: 2px;
@@ -5,6 +11,7 @@
     .container .cols.col-25{
         width: 50%;
     }
+
     .sloder .cols.col-33{
         width: 100%;
     }
@@ -12,6 +19,9 @@
         margin: 5px auto;
         width: 100%;
         max-width: 300px;
+    }
+    footer .footer__design .footer__img{
+        text-align: right;
     }
 }
 /*///////////////////////*/
@@ -28,6 +38,7 @@
     .grid-item img{
         width: 100%;
         height: 180px;
+        border-radius: 5px;
     }
     .grid__item__img__text p{
         padding-top: 10%;
@@ -71,17 +82,39 @@
         margin-bottom: 26px;
     }
     .slider{
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .slider-title{
         text-align: center;
         font: 22px/24px montserratbold, sans-serif;
+
     }
+    .slider__box {
+        margin: -15px auto;
+        max-height: 240px;
+    }
+    .first-slider .slider__info {
+        position: relative;
+        padding-top: 70px;
+    }
+    .second-slider .slider__info {
+        padding-top: 70px;
+    }
+    .third-slider .slider__info {
+        padding-top: 70px;
+    }
+
     .first-slider__nav,
     .second-slider__nav,
     .third-slider__nav{
         display: none;
     }
+    .person {
+        padding-top: 30px;
+        padding-bottom: 25px;
+    }
+
+
     .search .search__input{
         width: 40%;
     }

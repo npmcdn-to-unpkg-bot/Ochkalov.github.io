@@ -167,7 +167,7 @@ header {
   display: block;
   color: #fff;
   font: 14px montserratbold,sans-serif;
-  padding: 10px 24px;
+  padding: 8px 20px;
 }
 
 .header__bottom {
@@ -187,8 +187,9 @@ header {
 }
 
 .header__bottom .header__bottom--subtitle {
-  font: 18px robotolight,sans-serif;
+  font: 26px robotolight,sans-serif;
   margin-bottom: 26px;
+  margin-top: 20px;
 }
 
 .header__bottom .header__bottom--button {
@@ -385,6 +386,7 @@ header {
   overflow: hidden;
   float: left;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .grid__item__img__text {
@@ -486,22 +488,19 @@ footer .footer__company p {
   font: 14px/24px montserratbold,sans-serif;
 }
 
-footer .footer__design {
-  text-align: right;
-}
-
 footer .footer__design p {
   text-transform: uppercase;
   color: #bdbdbd;
   font: 10px montserratbold,sans-serif;
 }
 .slider {
-  margin-top: 65px;
+  margin-top: 90px;
 }
 
 .slider__title {
   text-align: center;
-  font: 24px/4em montserratbold,sans-serif;
+  font: 22px/40px montserratbold,sans-serif;
+  margin-bottom: 25px;
 }
 
 .slider__box {
@@ -730,6 +729,12 @@ footer .footer__design p {
   color: #fff;
   font: 14px robotolight,sans-serif;
 }
+@media screen and (min-width:750px) {
+  .header__bottom .header__bottom--button {
+    display: inline-block;
+  }
+}
+
 @media screen and (max-width:748px) {
   .container {
     padding: 2px;
@@ -747,6 +752,10 @@ footer .footer__design p {
     margin: 5px auto;
     width: 100%;
     max-width: 300px;
+  }
+
+  footer .footer__design .footer__img {
+    text-align: right;
   }
 }
 
@@ -776,6 +785,7 @@ footer .footer__design p {
 
   .grid-item img {
     height: 180px;
+    border-radius: 5px;
   }
 
   .grid__item__img__text p {
@@ -821,17 +831,37 @@ footer .footer__design p {
   }
 
   .slider {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .slider-title {
     font: 22px/24px montserratbold,sans-serif;
   }
 
+  .slider__box {
+    margin: -15px auto;
+    max-height: 240px;
+  }
+
+  .first-slider .slider__info {
+    position: relative;
+    padding-top: 70px;
+  }
+
+  .second-slider .slider__info,
+  .third-slider .slider__info {
+    padding-top: 70px;
+  }
+
   .first-slider__nav,
   .second-slider__nav,
   .third-slider__nav {
     display: none;
+  }
+
+  .person {
+    padding-top: 30px;
+    padding-bottom: 25px;
   }
 
   .search .search__input {
