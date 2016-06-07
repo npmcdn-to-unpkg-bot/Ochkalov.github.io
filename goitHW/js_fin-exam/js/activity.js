@@ -29,7 +29,7 @@ $(function () {
    
 
         var API_KEY = '2686637-cecd3eaeab4d849f02300401a';
-        var $url = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(search)+"&per_page=7"+"&image_type=photo";
+        var $url = "http://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(search)+"&per_page=7"+"&image_type=photo";
     
 
 
