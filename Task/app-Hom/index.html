@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои настройки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+    <header>
+        <nav class="header__blok">
+            <ul header__nav>
+                <li class="header__nav--item"><a href="#" class="sprite nav__left"></a></li>
+                <li class="header__nav--item"><a href="#" class="sprite nav__logo"></a></li>
+                <li class="header__nav--item"><a href="#" class="sprite nav__search"></a></li>
+                <li class="header__nav--item"><a href="#" class="sprite nav__menu"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+       <div class="settings-prof container">
+        <h2 class="settings-prof__title">Мои Настройки</h2>
+        <div class="settings__foto--container">
+            <img src="img/prof.png" alt="" class="settings__foto" height="135px" width="100px">
+        </div>
+        <div class="settings-prof__text"><a href="#">Добавить фото</a></div>
+        </div>
+    </section>
+    <section>
+        <div class="setings-email container">
+            <h3 class="setings-email__title title">Настройки профиля</h3>
+            <p class="setings-email__text subtitle">E-mail</p>
+            <div class="setings-email__email">zakhar.timersanov345@xxmail.com</div>
+            
+            <span class="setings-email__btn">
+                <button class="btn btn--gray" id="change-btn">Сменить пароль</button>
+            </span>
+            <div class="change-password">
+               <form action="">
+                    <h3 class="title">Смена пароля</h3>
+
+                    <span class="change-password__item">
+                    <p class="subtitle">Текущий пароль</p>
+                    <input type="password" class="change-password__input">
+                    </span>
+
+                     <span class="change-password__item">
+                    <p class="subtitle">Новый пароль</p>
+                    <input type="password" class="change-password__input">
+                    </span>
+
+                    <span class="change-password__item">
+                        <p class="subtitle">Подтверждение нового пароля</p>
+                        <input type="password" class="change-password__input">
+                    </span>
+                </form>
+                <div class="container smm-row">
+                    <h3 class="title text--center">Привязка аккаунтов</h3>
+                    <ul class="class="smm-row__item>
+                        <li class="smm-row__list"><a href="#" class="smm smm-in"></a></li>
+                        <li class="smm-row__list"><a href="#" class="smm smm-g"></a></li>
+                        <li class="smm-row__list"><a href="#" class="smm smm-fb"></a></li>
+                    </ul>
+                </div>
+                    <div class="container">
+                        <span class="setings-email__btn">
+                            <button class="btn btn-green">Сохранить изменения</button>
+                        </span>
+                        <span class="setings-email__btn">
+                            <button class="btn">Отменить изменения</button>
+                        </span>
+                    </div>   
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="setings-contacts container">
+            <h3 class="setings-contacts__title title">Контактная информация</h3>
+            <h4 class="setings-contacts__name subtitle">Имя пользователя</h4>
+            <div class="setings-contacts__nameshow show">Захар Тимерсанов</div>
+            <h4 class="setings-contacts__tel subtitle">Телефон</h4>
+            <div class="setings-contacts__telshow">+78 901 234 56 78</div>
+        </div>
+    </section>
+    <section>
+        <div class="setings-email-respond container">
+            <h3 class="setings-email-respond__title title">Настройка email-рассылки</h3>
+            <h4 class="setings-email-respond__city subtitle">Город</h4>
+            <div class="setings-email-respond__cityshow show">Алматы</div>
+            <h4 class="setings-email-respond__type subtitle">Тип недвижимости</h4>
+            <div class="setings-email-respond__typeshow show">Все</div>
+            <ul class="setings-email-respond__row">
+                <li class="setings-email-respond__overwriteletter ">
+                  <h4 class="subtitle">Перезаписывать настройки рассылки</h4>
+                    <div class="setings-email-respond__slider setings-email-respond__slider--btn"></div>
+                   </li>
+                <li class="setings-email-respond__overwriteletter">
+                  <h4 class="subtitle">Подписаться на персональную рассылку</h4> 
+                    <div class="setings-email-respond__slider setings-email-respond__slider--btn"></div>
+                   </li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
