@@ -1,6 +1,4 @@
 var gulp = require("gulp"),
-    // connect = require("gulp-connect"),
-    // opn = require("opn"),
     wiredep = require('wiredep').stream,
     useref = require('gulp-useref'),
     uglify = require('gulp-uglify'),
@@ -14,59 +12,21 @@ var gulp = require("gulp"),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
-/*// Запускаем локальный сервер
-gulp.task('connect', function() {
-  connect.server({
-    root: 'app',
-    livereload: true,
-    port: 8888
-  });
-  opn('http://localhost:8888');
-});
-
-// Работа с HTML
-gulp.task('html', function () {
-  gulp.src('./app/!*.html')
-    .pipe(connect.reload());
-});
-
-// Работа с CSS
-gulp.task('css', function () {
-  gulp.src('./app/css/!*.css')
-    .pipe(connect.reload());
-});
-
-// Работа с JS
-gulp.task('js', function () {
-  gulp.src('./app/js/!*.js')
-    .pipe(connect.reload());
-});
-
-// Слежка
-gulp.task('watch', function () {
-  gulp.watch(['./app/!*.html'], ['html']);
-  gulp.watch(['./app/js/!*.js'], ['js']);
-  gulp.watch(['./app/css/!*.css'], ['css']);
-});
-
-// Задача по-умолчанию
-gulp.task('default', ['connect', 'watch']);*/
-
 // ====================================================
 // ============== Локальная разработка APP ============
 
 // Работа с HTML
 gulp.task('html', function () {
   gulp.src('./app/*.html')
-      .pipe(gulp.dest('./app'));
+      .pipe(gulp.dest('app/'));
 });
 
 // Подключаем ссылки на bower components
-  gulp.task('wiredep', function () {
-    gulp.src('app/*.html')
-        .pipe(wiredep())
-        .pipe(gulp.dest('app/'))
-  });
+gulp.task('wiredep', function () {
+  gulp.src('app/*.html')
+      .pipe(wiredep())
+      .pipe(gulp.dest('app/'))
+});
 
 // Запускаем локальный сервер (только после компиляции jade)
 gulp.task('server', ['html'], function () {
@@ -81,9 +41,9 @@ gulp.task('server', ['html'], function () {
 
 // слежка и запуск задач
 gulp.task('watch', function () {
-  gulp.watch('app/*.html', ['html']);
   gulp.watch('bower.json', ['wiredep']);
   gulp.watch([
+    'app/*.html',
     'app/js/**/*.js',
     'app/css/**/*.css'
   ]).on('change', reload);
