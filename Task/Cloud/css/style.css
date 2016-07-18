@@ -1,0 +1,9 @@
+body{
+    width: 700px;
+    margin: 0 auto;
+}
+#example{
+    width: 550px;
+    height: 350px;
+    border: 1px solid #ccc;
+}
