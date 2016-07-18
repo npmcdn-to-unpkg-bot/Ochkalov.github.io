@@ -1,0 +1,22 @@
+{
+  "name": "Yoo-nerds",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "normalize.css": "~3.0.3"
+  },
+  "homepage": "https://github.com/Ochkalov/Ochkalov.github.io",
+  "authors": [
+    "Ochkalov <ochkalov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower",
+    "test",
+    "tests"
+  ]
+}

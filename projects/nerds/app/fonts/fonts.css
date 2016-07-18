@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'webfontregular';
+    src: url('roboto-webfont.woff2') format('woff2'),
+         url('roboto-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'webfontregular';
+    src: url('robotomedium-webfont.woff2') format('woff2'),
+         url('robotomedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
