@@ -26,5 +26,5 @@ var word_list = [
     {text:"зработка программного обеспечения", weight:rendom()}
 ];
 $(function () {
-    $("#example").jQCloud(word_list);
+    $(".promot-text").jQCloud(word_list);
 });
