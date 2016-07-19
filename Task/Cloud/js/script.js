@@ -23,7 +23,7 @@ var word_list = [
     {text:"теплая атмосфера", weight:rendom()},
     {text:"креативные идеи", weight:rendom()},
     {text:"рациональные решения", weight:rendom()},
-    {text:"рфзработка программного обеспечения", weight:rendom()}
+    {text:"зработка программного обеспечения", weight:rendom()}
 ];
 $(function () {
     $("#example").jQCloud(word_list);
